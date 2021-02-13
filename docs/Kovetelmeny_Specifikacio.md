@@ -1,0 +1,5 @@
+# Követelmény Specifikáció
+
+## Előszó
+----------------
+- A mai 21. század elején, főleg a korona vírusnak köszönhetően, a webshopok, és az egyéb online platformok szerepe jelentősen megnőtt. Mivel az emberek csak korlátozott mennyiségben és időben tudnak otthonukból kimozdulni, ezért létfontosságú biztosítani egy alternatívát a mindennapi vásárláshoz. Célunk egy ilyen modern webáruházat megvalósítani, ami kellően kielégíti a vásárlói igényeket minden kategóriában. Az oldalon bejelentkezés nélkül történhet meg termékvásárlás, viszont a regisztrációnak több előnye is van, többek között levásárolható GenPontok(TM) biztosítása minden vásárlás után, vásárolt termékek megjelenítése, vagy akár hozzászólások hagyása a termékek alatt. A projektet főleg JavaScript nyelven tervezzük megírni, mellette HTML és CSS-el kiegészítve a frontend részét.
