@@ -1,37 +1,37 @@
 # Követelmény Specifikáció
 
------------------------------
-##BEVEZETÉS
+## BEVEZETÉS
 -----------------------------
 
 A dokumentum Nagy Szabolcs Máté, Fekete Szabolcs, Bódi Cintia Maja, Vasas Csaba, Soós Gergő, Rajna Franciska közös projektje
 keretein belül létrejött szoftvert specifikálja.
 
------------------------------
+
 A RENDSZER CÉLJA
 -----------------------------
 A szoftver egy megrendelő által kért alkalmazás.
 Egy online webáruház megvalósítása.
 
------------------------------
 ÜTEMTERV
------------------------------
-
-Az ügyfélell való konzultációk:
-	2020-09-21-től 2020-12-17-ig Heti rendszerességgel szerda 13:00-kor.
-
------------------------------
-
-MÉRFÖLDKÖVEK
-
 -----------------------------
 
 Utólag határozzuk meg.
 
+
+
+
+MÉRFÖLDKÖVEK
 -----------------------------
 
-4. Követelmény listák
-4.1Funkcionális követelmények:
+
+Utólag határozzuk meg.
+
+
+
+Követelmény listák
+-----------------------------
+
+Funkcionális követelmények:
 K1: Belépés
 A weboldalt csak olyan felhasználók vehetik igénybe, akik rendelkeznek hozzáféréssel. Sikeres autentikáció után az összes (jogosultságaiknak megfelelő) funkcióhoz hozzáférnek. Az oldalon regisztrációra nincs lehetőség.
 
@@ -47,7 +47,7 @@ A rendszer lényege, hogy a cég mindennemű adata egy adatbázisban tárolódjo
 K5: A honlaphoz tartozó képek tárolása és implementálása
 Az oldalon szükséges képeket a szerveren tároljuk és onnan jelenítjük meg a frontend segítségével.
 
-4.2 Nemfunkcionális követelmények:
+Nemfunkcionális követelmények:
 
 K6: Letisztult design:
 A rendszer design legyen letisztult, átlátható, könnyen használható. Törekszünk a lehető legkényelmesebb kinézetre.
@@ -59,24 +59,21 @@ Támogatott eszközök:
 Webes felülete miatt platform független.
 
 
------------------------------
 FIZIKAI KÖRNYEZET
 -----------------------------
 A webes alkalmazás háttere (backend) a Java alpaján fut. A vizuális megjelenítést (frontend) JavaScript valósítja meg.
 
------------------------------
+
 TESZTTERV
 -----------------------------
 
 Utólag határozzuk meg.
 
------------------------------
 TELEPÍTÉSI TERV
 -----------------------------
 
 A webes alkalmazás telepítés nélkül futtatható, bármely webböngészőn keresztül, belső hálózaton.
 
------------------------------
 KARBANTARTÁSI TERV
 -----------------------------
 
