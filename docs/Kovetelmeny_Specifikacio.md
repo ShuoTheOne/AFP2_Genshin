@@ -5,6 +5,24 @@
 - A mai 21. század elején, főleg a korona vírusnak köszönhetően, a webshopok, és az egyéb online platformok szerepe jelentősen megnőtt. Mivel az emberek csak korlátozott mennyiségben és időben tudnak otthonukból kimozdulni, ezért létfontosságú biztosítani egy alternatívát a mindennapi vásárláshoz. Célunk egy ilyen modern webáruházat megvalósítani, ami kellően kielégíti a vásárlói igényeket minden kategóriában. Az oldalon bejelentkezés nélkül történhet meg termékvásárlás, viszont a regisztrációnak több előnye is van, többek között levásárolható GenPontok(TM) biztosítása minden vásárlás után, vásárolt termékek megjelenítése, vagy akár hozzászólások hagyása a termékek alatt. A projektet főleg JavaScript nyelven tervezzük megírni, mellette HTML és CSS-el kiegészítve a frontend részét.
 ----------------------------------
 
+## Vágyálomrendszer
+
+- Az oldalra látogatók szabadon böngészhetnek a kínálatok között.
+- Különlegessége, hogy bárki regisztráció nélkül vásárolhat.
+
+- A bejelentkezett felhasználóknak lehetőségük van menteni a kosár tartalmát, hogy legközelebbi látogatásukkor is meg tudják tekinteni.
+
+- A felhasználó a kosár menübe lépve tételesen lebontva látja a termékeket, a vásárolni kívánt mennyiséget és a hozzá tartozó árat.
+- A vásárlónak ezután meg kell adnia különfélee adatokat, amik a vásárláshoz és a kiszállításhoz szükségesek lesznek.
+- A vásárlás gombra kattintva a vásárló visszajelzést kap a tranzakció sikeréről és a várható érkezési dátumról.
+
+- A bejelentkezett felhasználó minden vásárlás után GenPontokat kap, ami a termékek összegének 5%-ával egyezik meg. Ezeket később beválthatja a termékek vásárlásakor.
+
+- A látogató különböző menüpontok között böngészhet.
+- Ezekrke kattintva megjelennek a választható termékek és hozzájuk kapcsolva egy kosárba gombbal.
+- A terméket kiválasztva részletes leírást jelenik meg róla, a vásárlók hozzászólásaival együtt.
+----------------------------------
+
 ## Jogszabály
 
 - A Polgári Törvénykönyvről szóló 2013. évi V. törvény (Ptk.);
