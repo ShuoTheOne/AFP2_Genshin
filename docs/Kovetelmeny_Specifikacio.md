@@ -7,20 +7,20 @@
 
 ## Vágyálomrendszer
 
--Az oldalra látogatók szabadon böngészhetnek a kínálatok között.
--Különlegessége, hogy bárki regisztráció nélkül vásárolhat.
+- Az oldalra látogatók szabadon böngészhetnek a kínálatok között.
+- Különlegessége, hogy bárki regisztráció nélkül vásárolhat.
 
--A bejelentkezett felhasználóknak lehetőségük van menteni a kosár tartalmát, hogy legközelebbi látogatásukkor is meg tudják tekinteni.
+- A bejelentkezett felhasználóknak lehetőségük van menteni a kosár tartalmát, hogy legközelebbi látogatásukkor is meg tudják tekinteni.
 
--A felhasználó a kosár menübe lépve tételesen lebontva látja a termékeket, a vásárolni kívánt mennyiséget és a hozzá tartozó árat.
--A vásárlónak ezután meg kell adnia különfélee adatokat, amik a vásárláshoz és a kiszállításhoz szükségesek lesznek.
--A vásárlás gombra kattintva a vásárló visszajelzést kap a tranzakció sikeréről és a várható érkezési dátumról.
+- A felhasználó a kosár menübe lépve tételesen lebontva látja a termékeket, a vásárolni kívánt mennyiséget és a hozzá tartozó árat.
+- A vásárlónak ezután meg kell adnia különfélee adatokat, amik a vásárláshoz és a kiszállításhoz szükségesek lesznek.
+- A vásárlás gombra kattintva a vásárló visszajelzést kap a tranzakció sikeréről és a várható érkezési dátumról.
 
--A bejelentkezett felhasználó minden vásárlás után GenPontokat kap, ami a termékek összegének 5%-ával egyezik meg. Ezeket később beválthatja a termékek vásárlásakor.
+- A bejelentkezett felhasználó minden vásárlás után GenPontokat kap, ami a termékek összegének 5%-ával egyezik meg. Ezeket később beválthatja a termékek vásárlásakor.
 
--A látogató különböző menüpontok között böngészhet.
--Ezekrke kattintva megjelennek a választható termékek és hozzájuk kapcsolva egy kosárba gombbal.
--A terméket kiválasztva részletes leírást jelenik meg róla, a vásárlók hozzászólásaival együtt.
+- A látogató különböző menüpontok között böngészhet.
+- Ezekrke kattintva megjelennek a választható termékek és hozzájuk kapcsolva egy kosárba gombbal.
+- A terméket kiválasztva részletes leírást jelenik meg róla, a vásárlók hozzászólásaival együtt.
 ----------------------------------
 
 ## Jogszabály
