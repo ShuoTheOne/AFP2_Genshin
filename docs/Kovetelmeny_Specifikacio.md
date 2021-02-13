@@ -16,3 +16,38 @@
 - A termékek eladási ára és egységára, továbbá a szolgáltatások díja feltüntetésének részletes szabályairól szóló 4/2009. (I. 30.) NFGM–SZMM együttes rendelet.
 - A fogyasztói jogviták online rendezéséről, valamint a 2006/2004/EK rendelet és a 2009/22/EK irányelv módosításáról szóló 524/2013/EU rendelet
 A jogszabályok elérhetőek a www.njt.hu oldalon.
+
+---------------------------
+## Rizikómenedzsment 
+
+Betegség (közepes): A projekt elkészülését késleltetheti, ha egy csapattag váratlanul megbetegedik.
+A betegség befolyásolhatja a termelékenységét.(Valószínűség: közepes/ hatás: közepes)
+
+Egy számítógép meghibásodása (nagy): Előfordulhat, hogy egy csapattag számítógépe ismeretlen okokból meghibásodhat.
+Ennek következtében kieshet fejlesztési idő. (Valószínűség: kicsi/ hatás: nagy).
+
+Adatveszteség (nagy): Adatveszteség esetén, a mennyiségtől függően, a projekt csúszára kerülhet. (Valószínűség: kicsi / hatás: nagy).
+
+Projekttag a kiosztott feladatot nem hajlandó elvégezni (közepes). (Valószínűség: kicsi / hatás: közepes).
+
+---------------------------
+## Projektcsapat
+
+| Név | Beosztás | Elérhetőség|
+| --- | --- | --- |
+| Nagy Szabolcs Máté | Junior | mikimi987654@gmail.com |
+| Fekete Szabolcs | Junior | fekszabolcs@gmail.com |
+|Vasas Csaba|Junior|csaba19999@gmail.com|
+|Bódi Cintia Maja|Junior|buksi.pajti@gmail.com|
+|Soós Gergő|Senior|gergosoos4@gmail.com|
+|Rajna Franciska|Senior|rajnafranciska45@gmail.com|
+
+---------------------------
+## Munkakörnyezet:
+A projekt a következő munkaállomásokat fogja használni a munka során:
+	Nagy Szabolcs Máté:
+		16 gb ddr4 ram
+		Geforce GTX 1050 TI
+		Intel i5-8600k 
+		Windows 10 
+		Opera GX LVL 2
