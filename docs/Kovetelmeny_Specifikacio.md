@@ -13,13 +13,13 @@
 - A bejelentkezett felhasználóknak lehetőségük van menteni a kosár tartalmát, hogy legközelebbi látogatásukkor is meg tudják tekinteni.
 
 - A felhasználó a kosár menübe lépve tételesen lebontva látja a termékeket, a vásárolni kívánt mennyiséget és a hozzá tartozó árat.
-- A vásárlónak ezután meg kell adnia különfélee adatokat, amik a vásárláshoz és a kiszállításhoz szükségesek lesznek.
+- A vásárlónak ezután meg kell adnia különféle adatokat, amik a vásárláshoz és a kiszállításhoz szükségesek lesznek.
 - A vásárlás gombra kattintva a vásárló visszajelzést kap a tranzakció sikeréről és a várható érkezési dátumról.
 
 - A bejelentkezett felhasználó minden vásárlás után GenPontokat kap, ami a termékek összegének 5%-ával egyezik meg. Ezeket később beválthatja a termékek vásárlásakor.
 
 - A látogató különböző menüpontok között böngészhet.
-- Ezekrke kattintva megjelennek a választható termékek és hozzájuk kapcsolva egy kosárba gombbal.
+- Ezekre kattintva megjelennek a választható termékek és hozzájuk kapcsolva egy kosárba gombbal.
 - A terméket kiválasztva részletes leírást jelenik meg róla, a vásárlók hozzászólásaival együtt.
 ----------------------------------
 
@@ -61,11 +61,33 @@ Projekttag a kiosztott feladatot nem hajlandó elvégezni (közepes). (Valószí
 |Rajna Franciska|Senior|rajnafranciska45@gmail.com|
 
 ---------------------------
-## Munkakörnyezet:
+## Munkakörnyezet:  
 A projekt a következő munkaállomásokat fogja használni a munka során:
-	Nagy Szabolcs Máté:
-		16 gb ddr4 ram
-		Geforce GTX 1050 TI
-		Intel i5-8600k 
-		Windows 10 
-		Opera GX LVL 2
+| Név | Processzor | Ram | Operációs rendszer | Böngésző |
+| --- | --- | --- | --- | --- |
+| Nagy Szabolcs Máté | Intel I5-8600k | 16gb | Windows 10 64 bit | Opera GX lvl2|	
+| Rajna Franciska |i7-7700HQ  | 16gb | Windows 10 64 bit | Chrome (88.0.4324.150 |
+| Vasas Csaba | I7-3930K | 32gb | Windows 10 64 bit| Chrome (88.0.4324.150 |
+| Bódi Cintia Maja | | | | |
+| Fekete Szabolcs | i7 7700K | 16gb | Windows 10 64 bit |Chrome 88.0.4324.150 |
+| Soós Gergő | | | | |
+
+---------------------------
+## Munka menedzsment
+A munkát Vasas Csaba menedzseli. A menedzser feladatai: állandó kapcsolattartás a csapattagok közöt. Kommunikáció a megrendelővel. A kommunikáció online történik (Discord, Facebook). Feladata még, hogyfolyamatosan tájékozódnia kell, a csapattagok jelenlegi helyzetéről az elvállalt feladatokkal kapcsolatban.
+
+---------------------------
+## Csoportgyűlések
+	- Első csoportgyűlés: 
+		Jelenlévők: Rajna Franciska, Vasas Csaba, Nagy Szabolcs Máté, Fekete Szabolcs, Bódi Cintia Maja, Soós Gergő
+		Megbeszélés helye, ideje: Online, discord, 2021. 02. 13. 14:00 - 16.00
+		Ötletek megbeszélése, trello és github felállítása
+	
+	- Második csoportgyűlés:
+		Jelenlévők: Rajna Franciska, Vasas Csaba, Nagy Szabolcs Máté, Fekete Szabolcs, Bódi Cintia Maja, Soós Gergő
+		Megbeszélés helye, ideje: Online, discord, 2021. 02. 14. 14:00 - 16.30
+		Dokumentációk megbeszélése, feladatok kiosztása.
+		
+---------------------------
+## Szótár
+-webshop: internetes áruház
