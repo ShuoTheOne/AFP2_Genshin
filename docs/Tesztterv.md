@@ -117,11 +117,11 @@ A teszt sikerességének kritériumai:
 | Csapattag megbetegedés  | közepes | Adott feladatok áthárulnak egy másik csapattagra |
 | Számítógép meghibásodás | magas  | Erőforrások megosztása a csapattagoknál |
 | Adatveszteség  | magas | Folyamatos biztonságimentés, verziókövetés |
-| Kiosztott feladat elmulasztása | magas  | Szigorú határidők betartása, folyamatos eszkalálás hátráltató probléma esetén a mielőbbi megoldást megtalálására. |
+| Kiosztott feladat elmulasztása | magas  | Szigorú határidők betartása, folyamatos törekvés hátráltató probléma esetén a mielőbbi megoldást megtalálására. |
 
 # Tesztjegyzőkönyv minta
 
-|**Tesztelési jegyzőkönyv** |
+| **Tesztelési jegyzőkönyv** |
 |---|---|
 | A teszt-eset leírás és célja: | |
 | A tesztelt folyamat/funkció leírása: | |
@@ -152,7 +152,7 @@ A teszt sikerességének kritériumai:
 
 # Tesztelési jelentés minta
 
-|**Tesztelési jelentés** |
+| **Tesztelési jelentés** |
 |---|---|
 | A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye: | |
 | A tesztelt folyamatok/funkciók/modulok leírása: | |
