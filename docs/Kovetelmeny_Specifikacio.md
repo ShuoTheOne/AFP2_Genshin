@@ -71,7 +71,7 @@ A projekt a következő munkaállomásokat fogja használni a munka során:
 | Vasas Csaba | I7-3930K | 32gb | Windows 10 64 bit| Chrome (88.0.4324.150 |
 | Bódi Cintia Maja | Intel I5-7500 | 8Gb | Windows 10 64 bit | Opera 74.0.3911.107 |
 | Fekete Szabolcs | i7 7700K | 16gb | Windows 10 64 bit |Chrome 88.0.4324.150 |
-| Soós Gergő | | | | |
+| Soós Gergő | i5-5200 | 8gb | Windows 10 64 bit | Chrome (88.0.4324.150) |
 
 ---------------------------
 ## Munka menedzsment
@@ -89,6 +89,14 @@ A munkát Vasas Csaba menedzseli. A menedzser feladatai: állandó kapcsolattart
 		Megbeszélés helye, ideje: Online, discord, 2021. 02. 14. 14:00 - 16.30
 		Dokumentációk megbeszélése, feladatok kiosztása.
 		
+	- Harmadik csoportgyűlés:
+		Jelenlévők: Rajna Franciska, Vasas Csaba, Nagy Szabolcs Máté, Fekete Szabolcs, Bódi Cintia Maja, Soós Gergő
+		Megbeszélés helye, ideje: Online, discord, 2021. 02. 16. 15:30 - 17.00
+		Weboldal grafikája, tesztterv, trello bővítése, határidők kiszabása.
+		
 ---------------------------
 ## Szótár
 - webshop: internetes áruház
+- HTML: A HTML egy leíró nyelv, melyet weboldalak készítéséhez fejlesztettek ki.
+- CSS: Stílusleíró nyelv a HTML típusú strukturált dokumentumok megjelenítését írja le.
+- JavaScript: Programozási nyelv egy objektumorientált, prototípus alapú szkriptnyelv.

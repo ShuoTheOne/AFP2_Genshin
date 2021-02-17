@@ -36,3 +36,40 @@
 - Az oldalon valamilyen módon jelenjen meg, ha egy termékből az utolsó darabok vannak, vagy ha elfogyott
 
 ----------------------------------
+## 2. Megbeszélés
+### Ideje: 2021. február 14.
+### Téma: Dokumentációk - Ötletek finomítása
+### Tagok
+- Soós Gergő
+- Rajna Franciska
+- Fekete Szabolcs
+- Vasas Csaba
+- Nagy Szabolcs Máté
+- Bódi Cintia Maja
+
+### Dokumentációk
+- Követelmény és Funckionális specifikáció megírásával kapcsolatos fejezetek megbeszélése,megírásának kiosztása.
+
+### Ötlet finomítások
+- Termék értékelés -> pontozás (csillaggal), szöveges véleményn yilvánítás.
+- Admin modosításo > új termék felvitele, termék módosítása, törlése.
+- Elképzelt dizájn átbeszélése.
+
+----------------------------------
+## 3. Megbeszélés
+### Ideje: 2021. február 16.
+### Téma: Tesztterv, Trello
+### Tagok
+- Soós Gergő
+- Rajna Franciska
+- Fekete Szabolcs
+- Vasas Csaba
+- Nagy Szabolcs Máté
+- Bódi Cintia Maja
+
+### Tesztterv
+- A tesztterv részeinek megbeszélése, átgondolása, megtervezése.
+- Feladatok kiosztás és határidő meghatározása.
+
+### Trello
+- Trello bővítése a megbeszélt ötletek alapján.
