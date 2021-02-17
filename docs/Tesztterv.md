@@ -121,7 +121,7 @@ A teszt sikerességének kritériumai:
 
 # Tesztjegyzőkönyv minta
 
-| **Tesztelési jegyzőkönyv** |
+| **Tesztelési jegyzőkönyv** | |
 |---|---|
 | A teszt-eset leírás és célja: | |
 | A tesztelt folyamat/funkció leírása: | |
@@ -152,7 +152,7 @@ A teszt sikerességének kritériumai:
 
 # Tesztelési jelentés minta
 
-| **Tesztelési jelentés** |
+| **Tesztelési jelentés** | |
 |---|---|
 | A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye: | |
 | A tesztelt folyamatok/funkciók/modulok leírása: | |
