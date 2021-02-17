@@ -26,6 +26,14 @@ _1.2_ Elvárások
 
 2.2 Tesztkörnyezet 
 
+**3 Tesztelési terv**
+	3.1 Fejlesztői teszt
+	3.2	Integrációs teszt
+	3.3	Elfogadási teszt
+	3.4	Terheléses teszt
+	3.5	Biztonsági teszt
+	3.6	Tesztelési feladatok, teszt-esetek leírása
+	3.7	Teszt forgatókönyv
 ## Dokumentáció
 
 **Változtatások jegyzéke**
@@ -33,7 +41,8 @@ _1.2_ Elvárások
 | **Verzió** | **Dátum** | **Készítette** | **Megjegyzés** | 
 | --- | --- | --- | --- |
 | 0.1 | 2021.02.18 | Fekete Szabolcs| Dokumentáció létrehozása |
-| 0.2 | 2021.02.18 | Vasas Csaba| Dokumentum hibajavítás, kiegészítés |  
+| 0.2 | 2021.02.18 | Vasas Csaba| Dokumentum hibajavítás, kiegészítés | 
+| 0.5 | 2021.02.18 | Nagy Szabolcs Máté | Bővítés: tesztelési terv | 
 | 1.0 |  | |  |
 
 **A dokumentumot megkapják**
@@ -109,6 +118,33 @@ A teszt sikerességének kritériumai:
     
 -   A projekt menedzser jóváhagyása a teszt leszállítandókra.
     
+## 3 Tesztelési terv
+A frontend teszteléséhez a böngészőkbe beépített segédeszközökkel kerülnek tesztelésre. Előre beállítható képernyő méretekkel ellenőrizzük, hogy a méretek jól beállítottak a különböző képernyőkhöz. A teszt akkor sikeres, ha a főbb funkciók jól olvashatók és alkalmazhatók.
+A backend tesztelése minta input-okkal történik. A beviteli mezőkbe elsősorban a kívánt intervallumok és értékek kerülnek tesztelésre, majd ezután véletlenszerű értékekkel is ellenőrzés alá esnek. A teszt abban az esetben sikeres, ha a kívánt értékek elfogadásra kerülnek, a hibás értékekre a rendszer hibaüzenetet küld a felhasználó számára ami számára is információval szolgál.
+Azért, hogy hibás adat ne kerülhessen az adatbázisba, illetve illetéktelen személyen ne jussanak információkhoz a felhasználókról, ezért több figyelmet fordítunk ezen részek tesztelésére.
+
+### 3.1 Fejlesztői teszt
+Tervezés és fejlesztés során ügyelünk arra, hogy lehetőleg minden hibát kiküszöböljünk, de természetesen előfordulhatnak problémák, amikre nem gondoltunk. Ennek megelőzése képen, amikor egy modul elkészülésével megkezdjük a tesztelését.
+
+### 3.2 Integrációs teszt
+A szoftver nem használ külső rendszert, sem API ,se egyéb módon, viszont az oldal által használt adatbázist többféle szerveren és adatbázis motor alatt tesztelésre kerülnek, hogy egy verzióváltás / platformváltás esetén se történhessen nagyobb kimaradás.
+
+### 3.3 Elfogadási teszt
+A megrendelőnek számára átadásra kerül egy példány a weboldalról, aki egy hozzáértő személy segítségével, vagy általa kiválasztott felhasználókkal teszteli. Ha a megrendelő hibát tapasztal, azt a lehető leghamarabb jelezze a fejlesztő csapat felé, hogy a hiba minél előbb javításra kerüljön. Ha a megrendelő számára megfelel a szoftver, úgy elfogadásra kerül a teszt és megkezdődik az éles tesztelés.
+
+### 3.4 Terheléses teszt
+Az elfogadási teszt jóváhagyását követően, a termék kiadása előtt, terhelés alá kell vetni a szoftvert. A tesztelés történhet valódi felhasználók bevonásával vagy script segítségével, mely több felhasználót kezel egyszerre és mindegyikkel az összes funkciót egy időben teszteli. A teszt során a szerver monitorozásra kerül. A teszt végeztével kiértékelésre kerül sor. Ha az előre megszabott határértékeket tapasztaljuk, a terhelési teszt sikerrel zárul. Ha nem, a megrendelővel és csapattal kommunikációt kell folytatni a probléma kiküszöbölésére.
+
+### 3.5 Biztonsági teszt
+Az oldalon történő regisztráció során a felhasználói adatok mentésre kerülnek. Hogy ezek ne kerülhessenek rossz kézbe, alapos tesztelésre van szükség. Akkor tekinthető sikeresnek a teszt, ha illetéktelen személy nem juthat információhoz. Ha mégis sikerül bejelentkeznie, nyomon követhető az illető és a felhasználó erről értesítést kap.
+
+### 3.6 Tesztelési feladatok, teszt-esetek leírása
+A tesztelési feladat a következő teszt-eseteket foglalja magába:
+	- Frontend teszt (UI)
+	- Backend teszt (programlogika)
+
+### 3.7 Teszt forgatókönyv
+A teszt elvégzésének meghatározott sorrendjét és függőségeit teszt forgatókönyvben kell rögzíteni. A teszt forgatókönyv elkészítése során ügyelni kell a párhuzamosan elvégezhető tevékenységek lehetőség szerinti kihasználásra, az tesztelési idő csökkentésének érdekében. 
 
 ## 4.5 Kockázat kezelés
 
