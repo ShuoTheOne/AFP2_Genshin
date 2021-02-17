@@ -1,3 +1,4 @@
+
 # GenShop tesztelési terv!
 
 | **Dokumentum címe: (azonosítója)** | MuffinShop tesztterv |
@@ -27,18 +28,15 @@ _1.2_ Elvárások
 
 ## Dokumentáció
 
-|**Változtatások jegyzéke**|
-|--------------------------|
-|                          |
+**Változtatások jegyzéke**
 
 | **Verzió** | **Dátum** | **Készítette** | **Megjegyzés** | 
 | --- | --- | --- | --- |
-| 1.0 | 2021.02.18 | Fekete Szabolcs| Dokumentáció létrehozása | 
-| 1.1 |  | |  |
+| 0.1 | 2021.02.18 | Fekete Szabolcs| Dokumentáció létrehozása |
+| 0.2 | 2021.02.18 | Vasas Csaba| Dokumentum hibajavítás, kiegészítés |  
+| 1.0 |  | |  |
 
-|**A dokumentumot megkapják**|
-|--------------------------|
-|                          |
+**A dokumentumot megkapják**
 
 | Név | Funkció |
 |--|--|
@@ -85,11 +83,10 @@ A csapatunk által használt erőforrások:
 ## 2.1 Feladatkörök és felelősségek (tesztcsapat meghatározása)
 
 
-|**Feladatkörök és felelősségek**|
-|--------------------------|
+**Feladatkörök és felelősségek**
 
-|  	|  	|  	|
-|-	|-	|-	|
+| | | |
+|-|-|-|
 |**Feladatkör**|  **Felelősség/tevékenység**	|  **Személy/Személyek**	|
 | Tesztelő |  A teszt végrehajtása, Észrevételek dokumentálása, Teszt dokumentáció archiválása	|  	|
 |Szakértő 	 |  A szakértő az észrevételek elemzi és megoldást javasol.	|  	|
@@ -102,9 +99,9 @@ Ebben a részben meg kell határozni, hogy a tesztelés milyen környezetben tö
 
 | Környezet neve és feladata | A hozzáférés módja  | Konfiguráció | Kapcsolattartó személyek |
 |-|-|-|-|
-| fejlesztői környezet | dokumentáció | Fentebb említett számítógép konfiguráció | Rajna Franciska/Soós Gergő |
+| Fejlesztői környezet | Dokumentáció | Fentebb említett számítógép konfiguráció | Rajna Franciska/Soós Gergő |
 
-## Elfogadási kritériumok
+## 4.4 Elfogadási kritériumok
 
 A teszt sikerességének kritériumai:
 
@@ -113,64 +110,70 @@ A teszt sikerességének kritériumai:
 -   A projekt menedzser jóváhagyása a teszt leszállítandókra.
     
 
-## Kockázat kezelés
+## 4.5 Kockázat kezelés
 
-**Kockázat**
-
-**Hatás**  _(magas/közepes/__alacsony)_
-
-**A kockázat kezelésének módja**
-
-| | | |  **1.**  | Csapattag megbetegedése | közepes | Adott feladatok áthárulnak egy másik csapattagra | |  **2.**  | Számítógép meghibásodása | magas | Erőforrások megosztása a csapattagok között | |  **3.**  | Adatveszteség | magas | Folyamatos biztonságimentés, verziókövető rendszer rendszeres használata | |  **4.**  | Kiosztott feladat elmulasztása | közepes | Szigorú határidők betartása, folyamatos eszkalálás hátráltató probléma esetén a mielőbbi megoldást megtalálására. |
+| Kockázat | Hatás (magas/közepes/alacsony) | Kockázatkezelési mód |
+|---|---|---|
+| Csapattag megbetegedés  | közepes | Adott feladatok áthárulnak egy másik csapattagra |
+| Számítógép meghibásodás | magas  | Erőforrások megosztása a csapattagoknál |
+| Adatveszteség  | magas | Folyamatos biztonságimentés, verziókövetés |
+| Kiosztott feladat elmulasztása | magas  | Szigorú határidők betartása, folyamatos eszkalálás hátráltató probléma esetén a mielőbbi megoldást megtalálására. |
 
 # Tesztjegyzőkönyv minta
 
-**Tesztelési jegyzőkönyv***
+|**Tesztelési jegyzőkönyv** |
+|---|---|
+| A teszt-eset leírás és célja: | |
+| A tesztelt folyamat/funkció leírása: | |
+| A tesztelés előfeltételei: | | 
+| A tesztelés dátuma és időpontja: | |
+| A tesztadatok típusa: | |
+| A tesztet végző személy(ek): | |
+|  A tesztelt rendszer beállításai: | |
+| A teszt-eset elvárt eredménye: | |
+|  A tesztelés eredménye: | |
+|  Megjegyzések: |  |
 
-**A teszt-eset leírás és célja:**
+| **Tesztelést elvégezte** | |
+|--|--|
+| Név: | |
+| Szervezeti egység/ beosztás: | |
+| Aláírás: | |
+| Dátum: | |
 
-| |  **A tesztelt folyamat/funkció leírása:**  | | |  **A tesztelés előfeltételei:**  | | |  **A tesztelés dátuma és időpontja:**  | | |  **A tesztadatok típusa:**  | | |  **A tesztet végző személy(ek):**  | | |  **A tesztelt rendszer beállításai:**  | | |  **A teszt-eset elvárt eredménye:**  | | |  **A tesztelés eredménye:**  |
+**Jóváhagyások:**
 
--   Megfelelt
--   Nem felelt meg
--   Megfelelt megjegyzésekkel | |  **Megjegyzések:**  | |
-
-**Tesztelést elvégezte**
-
-**Név:**
-
-| |  **Szervezeti egység/ beosztás:**  | | |  **Aláírás:**  | Dátum: |
-
-**Jóváhagyások**
-
-**Jóváhagyó**
-
-**Név:**
-
-| |  **Szervezeti egység/ beosztás:**  | | |  **Aláírás:**  | Dátum: |
+| **Jóváhagyó** | |
+|--|--|
+| Név: | |
+| Szervezeti egység/ beosztás: | |
+| Aláírás: | |
+| Dátum: | |
 
 # Tesztelési jelentés minta
 
-**Tesztelési jelentés***
+|**Tesztelési jelentés** |
+|---|---|
+| A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye: | |
+| A tesztelt folyamatok/funkciók/modulok leírása: | |
+| A tesztadatok típusa: | | 
+| A tesztelt rendszer beállításai: | |
+| A tesztelések eredménye: | ||
+|  Megjegyzések: |  |
 
-**A hivatkozott tesztjegyzőkönyvek rövid leírása és eredménye:**
+| **Tesztelést elvégezte** | |
+|--|--|
+| Név: | |
+| Szervezeti egység/ beosztás: | |
+| Aláírás: | |
+| Dátum: | |
 
-| |  **A tesztelt folyamatok/funkciók/modulok leírása:**  | | |  **A tesztadatok típusa:**  | | |  **A tesztelt rendszer beállításai:**  | | |  **A tesztelések eredménye:**  |
 
--   Megfelelt/élesíthető
--   Nem felelt meg
--   Megfelelt megjegyzésekkel | |  **Megjegyzések:**  | |
+**Jóváhagyások:**
 
-**Tesztelést elvégezte**
-
-**Név:**
-
-| |  **Szervezeti egység/ beosztás:**  | | |  **Aláírás:**  | Dátum: |
-
-**Jóváhagyások**
-
-**Jóváhagyó**
-
-**Név:**
-
-| |  **Szervezeti egység/ beosztás:**  | | |  **Aláírás:**  | Dátum: |
+| **Jóváhagyó** | |
+|--|--|
+| Név: | |
+| Szervezeti egység/ beosztás: | |
+| Aláírás: | |
+| Dátum: | |
