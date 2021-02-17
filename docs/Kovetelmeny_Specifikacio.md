@@ -33,20 +33,21 @@
 - Az egyes tartós fogyasztási cikkekre vonatkozó kötelező jótállásról szóló 151/2003. (IX. 22.) Korm. rendelet
 - A termékek eladási ára és egységára, továbbá a szolgáltatások díja feltüntetésének részletes szabályairól szóló 4/2009. (I. 30.) NFGM–SZMM együttes rendelet.
 - A fogyasztói jogviták online rendezéséről, valamint a 2006/2004/EK rendelet és a 2009/22/EK irányelv módosításáról szóló 524/2013/EU rendelet
+
 A jogszabályok elérhetőek a www.njt.hu oldalon.
 
 ---------------------------
 ## Rizikómenedzsment 
 
-Betegség (közepes): A projekt elkészülését késleltetheti, ha egy csapattag váratlanul megbetegedik.
+- Betegség (közepes): A projekt elkészülését késleltetheti, ha egy csapattag váratlanul megbetegedik.
 A betegség befolyásolhatja a termelékenységét.(Valószínűség: közepes/ hatás: közepes)
 
-Egy számítógép meghibásodása (nagy): Előfordulhat, hogy egy csapattag számítógépe ismeretlen okokból meghibásodhat.
+- Egy számítógép meghibásodása (nagy): Előfordulhat, hogy egy csapattag számítógépe ismeretlen okokból meghibásodhat.
 Ennek következtében kieshet fejlesztési idő. (Valószínűség: kicsi/ hatás: nagy).
 
-Adatveszteség (nagy): Adatveszteség esetén, a mennyiségtől függően, a projekt csúszára kerülhet. (Valószínűség: kicsi / hatás: nagy).
+- Adatveszteség (nagy): Adatveszteség esetén, a mennyiségtől függően, a projekt csúszára kerülhet. (Valószínűség: kicsi / hatás: nagy).
 
-Projekttag a kiosztott feladatot nem hajlandó elvégezni (közepes). (Valószínűség: kicsi / hatás: közepes).
+- Projekttag a kiosztott feladatot nem hajlandó elvégezni (közepes). (Valószínűség: kicsi / hatás: közepes).
 
 ---------------------------
 ## Projektcsapat
@@ -68,7 +69,7 @@ A projekt a következő munkaállomásokat fogja használni a munka során:
 | Nagy Szabolcs Máté | Intel I5-8600k | 16gb | Windows 10 64 bit | Opera GX lvl2|	
 | Rajna Franciska |i7-7700HQ  | 16gb | Windows 10 64 bit | Chrome (88.0.4324.150 |
 | Vasas Csaba | I7-3930K | 32gb | Windows 10 64 bit| Chrome (88.0.4324.150 |
-| Bódi Cintia Maja | | | | |
+| Bódi Cintia Maja | Intel I5-7500 | 8Gb | Windows 10 64 bit | Opera 74.0.3911.107 |
 | Fekete Szabolcs | i7 7700K | 16gb | Windows 10 64 bit |Chrome 88.0.4324.150 |
 | Soós Gergő | | | | |
 
@@ -90,4 +91,4 @@ A munkát Vasas Csaba menedzseli. A menedzser feladatai: állandó kapcsolattart
 		
 ---------------------------
 ## Szótár
--webshop: internetes áruház
+- webshop: internetes áruház
