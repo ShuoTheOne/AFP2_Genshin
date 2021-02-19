@@ -4,10 +4,10 @@
 | **Dokumentum címe: (azonosítója)** | MuffinShop tesztterv |
 | --- | --- |
 | **Minősítés: (állapot)**_(tervezet, jóváhagyott, stb.)_ | tervezet|
-| **Verziószám:** | 1.0 |
+| **Verziószám:** | 0.6 |
 | **Projekt név:** | GenShop|
 | **Készítette:** | Genshin csapata | 
-| **Utolsó mentés kelte:** | 2021.02.18. |
+| **Utolsó mentés kelte:** | 2021.02.19. |
 | **Dokumentum célja:** | A GenShop tesztelésének bemutatása. |
 | **Fájlnév:** | Tesztterv.md |
 
@@ -34,6 +34,11 @@ _1.2_ Elvárások
 	3.5	Biztonsági teszt
 	3.6	Tesztelési feladatok, teszt-esetek leírása
 	3.7	Teszt forgatókönyv
+
+4.4 Elfogadási kritériumok
+4.5 Kockázatkezelés
+4.6 Tesztjegyzőkönyv minta
+4.7 Tesztelési jegyzőkönyv minta
 ## Dokumentáció
 
 **Változtatások jegyzéke**
@@ -43,6 +48,7 @@ _1.2_ Elvárások
 | 0.1 | 2021.02.18 | Fekete Szabolcs| Dokumentáció létrehozása |
 | 0.2 | 2021.02.18 | Vasas Csaba| Dokumentum hibajavítás, kiegészítés | 
 | 0.5 | 2021.02.18 | Nagy Szabolcs Máté | Bővítés: tesztelési terv | 
+| 0.6 | 2021.02.19 | Vasas Csaba | Helyesírási hibák, struktúrajavítás | 
 | 1.0 |  | |  |
 
 **A dokumentumot megkapják**
@@ -83,9 +89,9 @@ Az alábbi alap elvárások képezik ennek a teszttervnek az alapját:
 
 A teszteléshez szükség van egy olyan eszközre mely az internethez  van csatlakozva.
 A csapatunk által használt erőforrások:
-- Proci: Intel(R) Core(TM) i5-5200 CPU @ 2.20GHz
+- Processzor: Intel(R) Core(TM) i5-5200 CPU @ 2.20GHz
 - RAM: 8 GB
-- Oprendszer: Windows 10 Pro (64-bit)
+- Operációs rendszer: Windows 10 Pro (64-bit)
 - 10Mbps/100Mbps internetkapcsolat
 - Böngésző: Google Chrome (88.0.4324.150)
 
@@ -99,7 +105,7 @@ A csapatunk által használt erőforrások:
 |**Feladatkör**|  **Felelősség/tevékenység**	|  **Személy/Személyek**	|
 | Tesztelő |  A teszt végrehajtása, Észrevételek dokumentálása, Teszt dokumentáció archiválása	|  	|
 |Szakértő 	 |  A szakértő az észrevételek elemzi és megoldást javasol.	|  	|
-| Teszt koordinátor |  Teszt terv készítése,  A tesztterv jóváhagyatásá a projektmenedzserrel,  Teszt forgatókönyvek létrehozása,  Inkonzisztenciák kezelése,   Helyes és időbeni hibakezelés,   Szükség esetén problémák eszkalálása a projekt menedzsernek,   Végső riport készítése,   Teszt dokumentum archiválása,   Az észrevételek státuszának követése, ill. dokumentálása 	|  	|
+| Teszt koordinátor |  Teszt terv készítése,  A tesztterv jóváhagyatása a projektmenedzserrel,  Teszt forgatókönyvek létrehozása,  Inkonzisztenciák kezelése,   Helyes és időbeni hibakezelés,   Szükség esetén problémák eszkalálása a projekt menedzsernek,   Végső riport készítése,   Teszt dokumentum archiválása,   Az észrevételek státuszának követése, ill. dokumentálása 	|  	|
 |  Projektvezető		|  Teszt terv jóváhagyása, Teszt forgatókönyv (testscript) jóváhagyása	| Rajna Franciska/Soós Gergő 	|
 
 ## 2.2 Tesztkörnyezet
@@ -109,14 +115,6 @@ Ebben a részben meg kell határozni, hogy a tesztelés milyen környezetben tö
 | Környezet neve és feladata | A hozzáférés módja  | Konfiguráció | Kapcsolattartó személyek |
 |-|-|-|-|
 | Fejlesztői környezet | Dokumentáció | Fentebb említett számítógép konfiguráció | Rajna Franciska/Soós Gergő |
-
-## 4.4 Elfogadási kritériumok
-
-A teszt sikerességének kritériumai:
-
--   Technikai, a teszt forgatókönyvben leírtak szerint.
-    
--   A projekt menedzser jóváhagyása a teszt leszállítandókra.
     
 ## 3 Tesztelési terv
 A frontend teszteléséhez a böngészőkbe beépített segédeszközökkel kerülnek tesztelésre. Előre beállítható képernyő méretekkel ellenőrizzük, hogy a méretek jól beállítottak a különböző képernyőkhöz. A teszt akkor sikeres, ha a főbb funkciók jól olvashatók és alkalmazhatók.
@@ -146,16 +144,24 @@ A tesztelési feladat a következő teszt-eseteket foglalja magába:
 ### 3.7 Teszt forgatókönyv
 A teszt elvégzésének meghatározott sorrendjét és függőségeit teszt forgatókönyvben kell rögzíteni. A teszt forgatókönyv elkészítése során ügyelni kell a párhuzamosan elvégezhető tevékenységek lehetőség szerinti kihasználásra, az tesztelési idő csökkentésének érdekében. 
 
-## 4.5 Kockázat kezelés
+## 4.4 Elfogadási kritériumok
+
+A teszt sikerességének kritériumai:
+
+-   Technikai, a teszt forgatókönyvben leírtak szerint.
+    
+-   A projekt menedzser jóváhagyása a teszt leszállítandókra.
+
+## 4.5 Kockázatkezelés
 
 | Kockázat | Hatás (magas/közepes/alacsony) | Kockázatkezelési mód |
 |---|---|---|
 | Csapattag megbetegedés  | közepes | Adott feladatok áthárulnak egy másik csapattagra |
 | Számítógép meghibásodás | magas  | Erőforrások megosztása a csapattagoknál |
-| Adatveszteség  | magas | Folyamatos biztonságimentés, verziókövetés |
+| Adatveszteség  | magas | Folyamatos biztonsági mentés, verziókövetés |
 | Kiosztott feladat elmulasztása | magas  | Szigorú határidők betartása, folyamatos törekvés hátráltató probléma esetén a mielőbbi megoldást megtalálására. |
 
-# Tesztjegyzőkönyv minta
+## 4.6 Tesztjegyzőkönyv minta
 
 | **Tesztelési jegyzőkönyv** | |
 |---|---|
@@ -186,7 +192,7 @@ A teszt elvégzésének meghatározott sorrendjét és függőségeit teszt forg
 | Aláírás: | |
 | Dátum: | |
 
-# Tesztelési jelentés minta
+## 4.7 Tesztelési jelentés minta
 
 | **Tesztelési jelentés** | |
 |---|---|

@@ -40,12 +40,12 @@ A jogszabályok elérhetőek a www.njt.hu oldalon.
 ## Rizikómenedzsment 
 
 - Betegség (közepes): A projekt elkészülését késleltetheti, ha egy csapattag váratlanul megbetegedik.
-A betegség befolyásolhatja a termelékenységét.(Valószínűség: közepes/ hatás: közepes)
+A betegség befolyásolhatja a termelékenységét. (Valószínűség: közepes/ hatás: közepes)
 
 - Egy számítógép meghibásodása (nagy): Előfordulhat, hogy egy csapattag számítógépe ismeretlen okokból meghibásodhat.
 Ennek következtében kieshet fejlesztési idő. (Valószínűség: kicsi/ hatás: nagy).
 
-- Adatveszteség (nagy): Adatveszteség esetén, a mennyiségtől függően, a projekt csúszára kerülhet. (Valószínűség: kicsi / hatás: nagy).
+- Adatveszteség (nagy): Adatveszteség esetén, a mennyiségtől függően, a projekt csúszásra kerülhet. (Valószínűség: kicsi / hatás: nagy).
 
 - Projekttag a kiosztott feladatot nem hajlandó elvégezni (közepes). (Valószínűség: kicsi / hatás: közepes).
 
@@ -75,7 +75,7 @@ A projekt a következő munkaállomásokat fogja használni a munka során:
 
 ---------------------------
 ## Munka menedzsment
-A munkát Vasas Csaba menedzseli. A menedzser feladatai: állandó kapcsolattartás a csapattagok közöt. Kommunikáció a megrendelővel. A kommunikáció online történik (Discord, Facebook). Feladata még, hogyfolyamatosan tájékozódnia kell, a csapattagok jelenlegi helyzetéről az elvállalt feladatokkal kapcsolatban.
+A munkát Vasas Csaba menedzseli. A menedzser feladatai: állandó kapcsolattartás a csapattagok között. Kommunikáció a megrendelővel. A kommunikáció online történik (Discord, Facebook). Feladata még, hogy folyamatosan tájékozódnia kell, a csapattagok jelenlegi helyzetéről az elvállalt feladatokkal kapcsolatban.
 
 ---------------------------
 ## Csoportgyűlések
