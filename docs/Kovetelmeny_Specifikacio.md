@@ -93,7 +93,11 @@ A munkát Vasas Csaba menedzseli. A menedzser feladatai: állandó kapcsolattart
 		Jelenlévők: Rajna Franciska, Vasas Csaba, Nagy Szabolcs Máté, Fekete Szabolcs, Bódi Cintia Maja, Soós Gergő
 		Megbeszélés helye, ideje: Online, discord, 2021. 02. 16. 15:30 - 17.00
 		Weboldal grafikája, tesztterv, trello bővítése, határidők kiszabása.
-		
+
+	- Negyedik csoportgyűlés:
+		Jelenlévők: Vasas Csaba, Nagy Szabolcs Máté, Fekete Szabolcs, Soós Gergő
+		Megbeszélés helye, ideje: Online, discord, 2021. 02. 19. 14:00 - 15.45
+		Frontend layout, Meglévő dokumentumok ellenőrzése/javítása/kiegészítése, Backend adatbázis megbeszélése	és tervezése
 ---------------------------
 ## Szótár
 - webshop: internetes áruház

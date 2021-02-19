@@ -1,4 +1,4 @@
-# Követelmény Specifikáció
+# Rendszerterv
 
 ## BEVEZETÉS
 -----------------------------

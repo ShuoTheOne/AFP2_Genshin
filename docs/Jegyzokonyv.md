@@ -73,3 +73,32 @@
 
 ### Trello
 - Trello bővítése a megbeszélt ötletek alapján.
+
+----------------------------------
+## 4. Megbeszélés
+### Ideje: 2021. február 19.
+### Téma: Frontend, Meglévő dokumentumok ellenőrzése/javítása/kiegészítése, Backend
+### Tagok
+- Soós Gergő
+- Fekete Szabolcs
+- Vasas Csaba
+- Nagy Szabolcs Máté
+
+### Frontend
+- Oldal slideshow hibájainak megvitatása / megbeszélése
+- Feladatok kiosztása, grafikus felület elkezdése
+
+#### Ötletek
+- Fejléc, lábléc, slideshow, navigációs bár
+- Navigációs bár: kategóriánál lenyílható menü ami oldalra is lenyílik
+- Slideshow: pár másodperc után képváltás, amit manuálisan is meg lehet oldani.
+- Fejlécben szerepeljen a logó, keresési menü, kosár, felhasználói ikon
+
+### Meglévő dokumentumok ellenőrzése/javítása/kiegészítése
+- Rendszerterv bővítése.
+- Követelményspecifikáció áttekintése/javítása.
+- Tesztterv újraolvasása, javítása, tartalomjegyzék elkészítése, verzióbővítés.
+
+### Backend
+- Adatbázistervezés
+- User, Product, Rating, Buy adattábláinak megtervezése
