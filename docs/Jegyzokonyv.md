@@ -102,3 +102,28 @@
 ### Backend
 - Adatbázistervezés
 - User, Product, Rating, Buy adattábláinak megtervezése
+
+----------------------------------
+## 5. Megbeszélés
+### Ideje: 2021. február 20.
+### Téma: Frontend, Meglévő dokumentumok ellenőrzése/javítása/kiegészítése, Backend
+### Tagok
+- Soós Gergő
+- Fekete Szabolcs
+- Vasas Csaba
+- Nagy Szabolcs Máté
+- Bódi Cintia Maja
+
+#### Ötletek
+- usecase tovább gondolása
+- Rendszertervben kicserélni a mérföldköveket usecase diagramra.
+
+### Funkcionális spec. dokumentum felosztás
+- Használati esetek, a rendszer célja és nem célja, folyamat ábrák (Vasas Csaba)
+- Képernyőtervek, jelenlegi helyzet és vágyállom (Nagy Szabolcs Máté)
+- Forgatókönyvek (Bódi Cintia Maja)
+- Funkcionális követelmények (Fekete Szabolcs)
+
+### Backend
+- Adatbázistervezés
+- User, Product, Rating, Buy adattábláinak tovább tervezése
