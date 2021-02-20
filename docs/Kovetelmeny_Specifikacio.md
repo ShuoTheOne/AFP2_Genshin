@@ -104,3 +104,5 @@ A munkát Vasas Csaba menedzseli. A menedzser feladatai: állandó kapcsolattart
 - HTML: A HTML egy leíró nyelv, melyet weboldalak készítéséhez fejlesztettek ki.
 - CSS: Stílusleíró nyelv a HTML típusú strukturált dokumentumok megjelenítését írja le.
 - JavaScript: Programozási nyelv egy objektumorientált, prototípus alapú szkriptnyelv.
+
+![usecase_dia](https://github.com/ShuoTheOne/AFP2_Genshin/tree/main/docs/usecase.png)
