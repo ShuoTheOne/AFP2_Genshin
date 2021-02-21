@@ -15,16 +15,17 @@ Egy online webáruház megvalósítása.
 ÜTEMTERV
 -----------------------------
 
-Utólag határozzuk meg.
+Prototipus elkészítése és bemutatása.
+A kész szoftver átadása a megrendelőnek.
 
 
 
-
-MÉRFÖLDKÖVEK
+Üzleti modell
 -----------------------------
 
 
-Utólag határozzuk meg.
+![igenyeltuzletimodell](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/imgs/igenyeltuzletimodell.png)
+![jelenlegiuzletimodell](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/imgs/jelenlegiuzletimodell.png)
 
 
 
@@ -67,7 +68,7 @@ A webes alkalmazás háttere (backend) a Java alpaján fut. A vizuális megjelen
 TESZTTERV
 -----------------------------
 
-Utólag határozzuk meg.
+Tesztterv.md -ben megtalálható.
 
 TELEPÍTÉSI TERV
 -----------------------------
