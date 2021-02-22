@@ -49,6 +49,11 @@ Előfeltételek:
 * K09: A kezelt adatokat MYSQL adatbázisban fogjuk tárolni. Az adatbázis használatával biztosítjuk az adatok bővíthetőségét. A applikációt JavaScript objektum orientált módon valósítjuk meg, amellyel új funkciókat könnyedén tudunk utólag hozzáadni a rendszerhez.
 * K10: Azonos webáruház folyamatok esetén a migrálás könnyedén megvalósítható, esetleges bővítések a K09 ponthoz írtak alapján gyorsan elérhetők. 
 
+## Képernyőtervek
+![kepernyo1](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/imgs/kepernyo1.png)
+![kepernyo2](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/imgs/kepernyo2.png)
+![kepernyo3](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/imgs/kepernyo3.png)
+
 ## Forgatókönyvek
 Minden felhasználó/látogató számára a Kezdőlap oldal jelenik meg először. Az oldal logójára kattintva szintén, erre az oldalra navigálja a látogatót.
 A navigáció sáv a Kezdőlap, Kategóriák, Kiemelet Ajánlatok és Hírlevélre való feliratkozás menüpontokat tartalmazza.
