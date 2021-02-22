@@ -49,6 +49,98 @@ Előfeltételek:
 * K09: A kezelt adatokat MYSQL adatbázisban fogjuk tárolni. Az adatbázis használatával biztosítjuk az adatok bővíthetőségét. A applikációt JavaScript objektum orientált módon valósítjuk meg, amellyel új funkciókat könnyedén tudunk utólag hozzáadni a rendszerhez.
 * K10: Azonos webáruház folyamatok esetén a migrálás könnyedén megvalósítható, esetleges bővítések a K09 ponthoz írtak alapján gyorsan elérhetők. 
 
+## Forgatókönyvek
+Minden felhasználó/látogató számára a Kezdőlap oldal jelenik meg először. Az oldal logójára kattintva szintén, erre az oldalra navigálja a látogatót.
+A navigáció sáv a Kezdőlap, Kategóriák, Kiemelet Ajánlatok és Hírlevélre való feliratkozás menüpontokat tartalmazza.
+Az oldal logója mellett egy keresővel lehet keresni a termékek között, neveik szerint.
+A header tartalmaz még egy kosarat, amire kattintva meg lehet tekinteni a kosár tartalmát, valamint egy a bejelentkező felületre navigáló ikont.
+A bejelentkező felületen  keresztül lehet regisztrációs folyamatot végrehajtani.
+Ezen funkciók a rendszerbe való belépés előtt minden esetben elérhetők.
+
+A látogató bármelyik megjelenített oldalon kezdeményezheti az alább részletezett műveleteket vagy oldalak megjelenítését:
+- A Kezdőlapra kattintva megjelennek az újdonságok.
+- A Kategóriák menüpontot választva egy legördülő menüben megjelennek a választható kategóriák, ezekre kattintva mellettük az alkategórák.
+- A Kiemelt ajánlatok az éppen akciós, vagy fogyó termékeket jeleníti meg.
+- A Hírlevél pont segítségével lehet feliratkozni a hírlevélre az e-mail cím megadása után.
+- A Belépést választva be lehet lépni a rendszerbe. Aki adminisztrátori jogosultsággal rendelkezik adminisztrátorként jelentkezik be. Hibás felhasználó név vagy jelszó megadása esetén újból meg kell adni az adatokat.
+
+Amennyiben a felhasználó adminisztrátor a Kezdőlap menüpont mellett a Módosítás opció jelenik meg. Ezt választva egy egyzser adminisztrációs felületet kapunk, ahol az oldallal kapcsolatos változtatásokat lehet elvégezni.
+Termék hozzáadsáa, törlése, módosítása, akciózás, áremelés, árcsökkentés. Felhasználó hozzáadása, törlése, módosítása, jogosuétságának beállítása.
+
+Emellett a felhasználó ikonra kattintva megjelenik a belépett felhasználó neve (pl. Belépve: jucika957), a Személyes adatok, Jelszó csere, Kijelentkezés pontok közül lehet választani.
+
+A Személyes adatok űrlapon végrehajtható feladatok:
+ - A felhasználó tudja módosítani:
+   - nevét
+   - a telefonszámát
+   - e-mail címét
+   - lakcímét
+ - Ennek értelemszerűen csak abban az esetben van jelentősége, ha a felhasználó adminisztátori jogosultsággal nem rendelkezik.
+
+Egy kategóriát kiválasztva listázva megjelennek a termékek a nevüket és árukat feltűntetve, valamint egy "Kosárba" gomb. Ezt használva csak egy db kerül a kosárba a termékből.
+Ha egy adott termék elfogyott jelzi a vásárlónak.
+A "Kiemelt ajénlatok" és a "Keresés" is hasonlóan épül fel.
+
+Egy termék választása esetén:
+- Láthatunk egy képet a termékről.
+- Mellette a termékről kaphatunk pontosabb információkat:
+  - Neve
+  - Ára
+  - Vásárlói visszajelzések: Csak bejelentkezett felhasználó tud írni.
+  - Rövid leírás
+- A "Kosárba" gomb mellett megadhatjuk, hogy hány db ilyen terméket szerenénk vásárolni.
+- Ha nincs a termékből elég, vagy egyáltalán nincs, akkor igénylést küldhet az adminisztrtátoroknak.
+- Ha elfogyott / limitált mennyiségben van jelezi.
+- Akció esetén a régi ár is megjelenik.
+
+A Regisztrációra kattintva különböző adatokat kell a felhasználónak megadni.
+- Felhasználónév
+- Jelszó
+- Jelszó mégegyzser: Egyeznie kell a jelszó pontban megadottal.
+- Teljes név
+- Születési dátum: 16 év alatt nem lehet regisztrálni.
+- Irányítószám
+- Város
+- Utca
+- Házszám
+- E-mail cím
+
+A regisztrálás gombra kattintva, ha minden megfelelő az oldal a Belépés-hez navigálja a felhasználót.
+Sikertelen regisztráció esetén a hibás cellákat újra ki kell tölteni.
+
+A kosárra kattintva:
+- Bejelentkezett felhasználó esetén:
+  - Elmenti a kosár tartalmát, hogy legközelebbi látogatásakor is hozzáférhessen.
+  - Vásárlás alkalmával nem szükséges megadni az adatait.
+- Nem bejelentkezett felhasználó esetén:
+  - A kosár tartalma az oldal bezárásával törlődik.
+  - A vásárlásra kattintva meg kell adni az adatait
+
+A következőkben az adminisztrációs felületet fogom tárgyalni:
+
+Termék:
+- Termék hozzáadása pontban a termék adatait kell megadni:
+  - Nevét
+  - Kategóriáját
+  - Alkategóriáját
+  - Árát
+  - Rövid leírás.
+  - Raktáron lévő mennyiség.
+- Termék módosítása pontban meg lehet változtatni a termék nevét, árát, kategóriáját, alkategóriáját, leírását, kiemelt-e és mennyiségét.
+- Ezek helytelen kitöltése esetén a rosszul megadott adat celláját újra ki kell tölteni.
+- A mentés gombra kattintva megjelenik egy összefoglaló a változtatásokról. Az Mégse gomb visszavetez az űrlaphoz.
+- Akció esetén meg lehet adni, hány százalékkal esik az ára és a rendszer automatikusan kiszámolja az új árat.
+- Termék törlésével minden adat a termékről megsemmisül.
+- Az oldal jelzi az adminisztrátornak, ha egy termék fogyóban van.
+
+
+Felhasználó:
+- Az adminisztrátor magasabb jogosultsággal tudja felhatalmazni a felhaszálókat, így ők is tudnak a termékeket módosítani, hozáadni.
+- Felhasználó törlésével minden adata megsemmisül.
+- Felhasználó módosításával lehet megváltoztani a felhasználó minden adatát: nevét, lakcímét, telefonszámát, e-mail címét, születési idejét és jelszavát.
+
+
+
 
 ## Jelenlegi helyzet leírás
 Jelenleg a vevőnek a boltba kell jönni személyesen vagy telefonon kell intéznie a megrendelését, azonban ez gyakran félreértések és hibákat eredményez. Ahhoz, hogy a bolt feltudja venni a versenyt a többi boltokkal szemben, szükségük van egy felületre amely könnyen elérhető bárki számára. Egy webes felülettel már nem szükséges többé a személyes találkozásokra, illetve könnyebb a vevőknek pontos információkat nyújtani egy adott termékről. Jelenleg csak a környező településeknek a figyelmét tudják felkelteni. A különböző akciók a termékekre nem mindig érte el az embereket, illetve nem tudtak személyre szóló kedvezményeket adni , mert nem tároltak információkat a vevőkről. Az adatok hiányában a bolt nem tudja követni, hogy egy adott termék mennyire népszerű vagy népszerűtle, így nehéz felkészülni egy adott termék készlethiányára.  Papíron nehéz volt nyilvántartani a leltáron milyen készletek állnak rendelkezése, emiatt gyakoriak voltak a késések.
