@@ -127,3 +127,24 @@
 ### Backend
 - Adatbázistervezés
 - User, Product, Rating, Buy adattábláinak tovább tervezése
+
+----------------------------------
+## 6. Megbeszélés
+### Ideje: 2021. február 23.
+### Téma: Dokumentációk véglegesítése, Frontend/Backend feladatok
+### Tagok
+- Soós Gergő
+- Fekete Szabolcs
+- Vasas Csaba
+- Nagy Szabolcs Máté
+- Bódi Cintia Maja
+- Rajna Franciska
+
+### Dokumentációk véglegesítése
+- A dokumentumok újra átnézése, hibák korrigálása
+- Kövspec csoportgyűlés átírása <- Fekete Szabolcs
+- Rendszerterv üzleti model javítása <- Fekete Szabolcs
+
+### Frontend/Backend
+- Fealadok átbeszélése, kiosztása
+- Trello bővítése, javítása
