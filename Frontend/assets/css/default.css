@@ -1,21 +1,24 @@
 body
 {
-	position: relative;
-	margin: 0px;	
+	margin: 0px;
+	
 }
 
 #container
 {
+	overflow: auto;
 	height: 100vh;
-	min-width: 1000px;
+	min-width: 500px;
 	min-height: 1px;
 	background-image: linear-gradient(#00FFFF, #00FF00, #FFA500);
 }
 
+/* Fejléc rész */
 #header
 {
+	position: sticky;
 	resize: both;
-  overflow: auto;
+    overflow: auto;
 }
 
 .genshin-logo
@@ -67,14 +70,14 @@ body
 	padding-right: 3%;
 	width: 5%;
 }
-
+ 
+/* navigációs sáv */
 #navbar
 {
 	background-image: linear-gradient(to left, green, yellow, orange, red);
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
-
+}	
 #navbar > ul 
 {
   float: center;
@@ -88,7 +91,6 @@ body
 {
 	display: inline-block;
 }
-
 #navbar > ul > li > a
 { 
 	padding-left: 50px; padding-right: 50px; padding-top: 5px; padding-bottom: 5px;
@@ -96,6 +98,7 @@ body
 	font-weight: bold;
 	font-size: 20px;
 	text-decoration: none;
+
 }
 
 #navbar > ul > li > a:hover
@@ -104,17 +107,35 @@ body
 	border-radius: 40px;
 }
 
-#slidebar
+/* Kiemelt ajánlatok lapozó */
+#slideshow
 {
-	
-	padding-bottom: 100px;
+	width: 500px;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
 }
 
+.slideshowimage
+{
+	width: 500px;
+	height: 300px;
+}
+
+.slideshowBtnLeft, .slideshowBtnRight
+{
+	width: 50px;
+	height: 30px;
+}
+
+
+/* Fő rész */
 #hastag
 {
 	padding-bottom: 500px;
 }
 
+/* Lábléc rész */
 #footer
 {
 	text-align: center;
@@ -122,6 +143,7 @@ body
 	bottom: 8px;
 	width: 100%;
 	text-align: center;
-	font-size: 18px;
+	font-size: 18px;	
 }
+
 	
