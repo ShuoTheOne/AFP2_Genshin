@@ -98,7 +98,6 @@ body
 	font-weight: bold;
 	font-size: 20px;
 	text-decoration: none;
-
 }
 
 #navbar > ul > li > a:hover
@@ -132,18 +131,74 @@ body
 /* Fő rész */
 #hastag
 {
-	padding-bottom: 500px;
+	padding-bottom: 450px;
 }
 
 /* Lábléc rész */
 #footer
 {
+	margin: auto;
 	text-align: center;
-	position: absolute;
+	padding-bottom: 10px;
 	bottom: 8px;
 	width: 100%;
-	text-align: center;
-	font-size: 18px;	
+	font-size: 18px;
 }
 
+/* Login panel */
+#loginpanel
+{
+	background-color: #FFFAFA;
+	width: 300px;
+	min-height: 300px;
+	padding-top: 20px;
+	color: red;
+	line-height: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-top: 20vh;
+	margin-bottom: 80px;
+}
+
+/* Register panel */
+#registerpanel
+{
+	background-color: #FFFAFA;
+	width: 300px;
+	padding-top: 20px;
+	color: red;
+	line-height: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-top: 5vh;
+	margin-bottom: 80px;
+}
+
+/* Forgetpassword */
+#forgetpassword
+{
+	min-height: 100px;
+	background-color: #FFFAFA;
+	width: 300px;
+	padding-top: 20px;
+	margin: auto;
+	text-align: center;
+	line-height: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	margin-top: 30vh;
+	margin-bottom: 80px;
+}
+
+.hrefunderline
+{
+	text-decoration: none;	
+}
 	
