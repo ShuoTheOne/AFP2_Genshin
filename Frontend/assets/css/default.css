@@ -1,14 +1,13 @@
 body
 {
 	margin: 0px;
-	
 }
 
 #container
 {
 	overflow: auto;
 	height: 100vh;
-	min-width: 500px;
+	min-width: 768px;
 	min-height: 1px;
 	background-image: linear-gradient(#00FFFF, #00FF00, #FFA500);
 }
@@ -16,6 +15,8 @@ body
 /* Fejléc rész */
 #header
 {
+	min-width: 1200px;
+	max-height: 100px;
 	position: sticky;
 	resize: both;
     overflow: auto;
@@ -59,21 +60,26 @@ body
 	resize: both;
     overflow: auto;
 	padding-left: 2%;
-	padding-right: 1%;
+	padding-right: 2%;
 	width: 5%;	
+	float: right;
+	padding-top: 15px;
 }
 .shopcart
 {
 	resize: both;
     overflow: auto;
 	padding-left: 1%;
-	padding-right: 3%;
+	padding-right: 5%;
 	width: 5%;
+	float: right;
+	padding-top: 15px;
 }
  
 /* navigációs sáv */
 #navbar
 {
+	min-width: 1000px;
 	background-image: linear-gradient(to left, green, yellow, orange, red);
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -201,4 +207,115 @@ body
 {
 	text-decoration: none;	
 }
+
+/* Product */
+#product
+{
+	margin: auto;
+	text-align: center;
+	min-width: 650px;
+	width: 70vw;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#product-top
+{
+	min-width: 650px;
+	height: 375px;
+	background-color: orange;
+}
+
+	.product-top 
+	{
+		float: left;
+		height: 300px;
+	}
 	
+		.producttopleft
+		{
+			width: 30vw;
+			margin-right: 50px;
+		}
+		
+			.product-top-left-img
+			{
+				margin-top: 25px;
+				height: 300px;
+			}
+		
+		.producttopright
+		{
+			width: 30vw;
+		}
+		
+			.producttopright > p
+			{
+				line-height: 2.5;
+				font-weight: bold;
+				font-size: 20px;
+			}
+
+#product-middle
+{
+	background-color: gray;
+	padding: 10px;
+	margin-top: 20px;
+	min-height: 500px;
+}
+
+#product-bottom
+{
+	background-color: #FAF0E6;
+	padding: 10px;
+	margin-top: 20px;
+	min-height: 300px;
+}
+
+#opinion
+{
+	height: 250px;
+	width: 50vw;
+}
+
+#opinionstartext
+{
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+/* Opinion stars */
+.rate {
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+	float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
