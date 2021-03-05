@@ -79,25 +79,8 @@ A munkát Vasas Csaba menedzseli. A menedzser feladatai: állandó kapcsolattart
 
 ---------------------------
 ## Csoportgyűlések
-	- Első csoportgyűlés: 
-		Jelenlévők: Rajna Franciska, Vasas Csaba, Nagy Szabolcs Máté, Fekete Szabolcs, Bódi Cintia Maja, Soós Gergő
-		Megbeszélés helye, ideje: Online, discord, 2021. 02. 13. 14:00 - 16.00
-		Ötletek megbeszélése, trello és github felállítása
+A csoport gyűléseket a [Jegyzokonyv.md](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/Jegyzokonyv.md "Jegyzokonyv.md")-ben vezetjük
 	
-	- Második csoportgyűlés:
-		Jelenlévők: Rajna Franciska, Vasas Csaba, Nagy Szabolcs Máté, Fekete Szabolcs, Bódi Cintia Maja, Soós Gergő
-		Megbeszélés helye, ideje: Online, discord, 2021. 02. 14. 14:00 - 16.30
-		Dokumentációk megbeszélése, feladatok kiosztása.
-		
-	- Harmadik csoportgyűlés:
-		Jelenlévők: Rajna Franciska, Vasas Csaba, Nagy Szabolcs Máté, Fekete Szabolcs, Bódi Cintia Maja, Soós Gergő
-		Megbeszélés helye, ideje: Online, discord, 2021. 02. 16. 15:30 - 17.00
-		Weboldal grafikája, tesztterv, trello bővítése, határidők kiszabása.
-
-	- Negyedik csoportgyűlés:
-		Jelenlévők: Vasas Csaba, Nagy Szabolcs Máté, Fekete Szabolcs, Soós Gergő
-		Megbeszélés helye, ideje: Online, discord, 2021. 02. 19. 14:00 - 15.45
-		Frontend layout, Meglévő dokumentumok ellenőrzése/javítása/kiegészítése, Backend adatbázis megbeszélése	és tervezése
 ---------------------------
 ## Szótár
 - webshop: internetes áruház

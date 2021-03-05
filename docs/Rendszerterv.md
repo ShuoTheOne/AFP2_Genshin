@@ -1,7 +1,8 @@
+
 # Rendszerterv
 
 ## BEVEZETÉS
------------------------------
+
 
 A dokumentum Nagy Szabolcs Máté, Fekete Szabolcs, Bódi Cintia Maja, Vasas Csaba, Soós Gergő, Rajna Franciska közös projektje
 keretein belül létrejött szoftvert specifikálja.
@@ -15,7 +16,7 @@ Egy online webáruház megvalósítása.
 ÜTEMTERV
 -----------------------------
 
-Prototipus elkészítése és bemutatása.
+Prototípus elkészítése és bemutatása.
 A kész szoftver átadása a megrendelőnek.
 
 
@@ -23,16 +24,20 @@ A kész szoftver átadása a megrendelőnek.
 Üzleti modell
 -----------------------------
 
+ Jelenlegi üzletimodell
 
-![igenyeltuzletimodell](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/imgs/igenyeltuzletimodell.png)
-![jelenlegiuzletimodell](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/imgs/jelenlegiuzletimodell.png)
+ ![jelenlegiuzletimodell](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/imgs/jelenlegiuzletimodell.png)
 
+  -----------------------------
+Igenyelt üzletimodell 
 
+ ![igenyeltuzletimodell](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/imgs/igenyeltuzletimodell.png)
 
 Követelmény listák
 -----------------------------
 
 Funkcionális követelmények:
+
 K1: Belépés
 A weboldalt csak olyan felhasználók vehetik igénybe, akik rendelkeznek hozzáféréssel. Sikeres autentikáció után az összes (jogosultságaiknak megfelelő) funkcióhoz hozzáférnek. Az oldalon regisztrációra nincs lehetőség.
 
@@ -62,13 +67,13 @@ Webes felülete miatt platform független.
 
 FIZIKAI KÖRNYEZET
 -----------------------------
-A webes alkalmazás háttere (backend) a Java alpaján fut. A vizuális megjelenítést (frontend) JavaScript valósítja meg.
+A webes alkalmazás háttere (backend) a Java alapján fut. A vizuális megjelenítést (frontend) JavaScript valósítja meg.
 
 
 TESZTTERV
 -----------------------------
 
-Tesztterv.md -ben megtalálható.
+[Tesztterv.md](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/Tesztterv.md "Tesztterv.md") -ben megtalálható.
 
 TELEPÍTÉSI TERV
 -----------------------------
@@ -79,5 +84,5 @@ KARBANTARTÁSI TERV
 -----------------------------
 
 A webes alkalmazás minimális karbantartást igényel, amely a következőkre bontható:
-- Ellenőrizni kell, hogy a jövőben kiadott böngésző frissítésekkel műkődőképes marad-e.
+- Ellenőrizni kell, hogy a jövőben kiadott böngésző frissítésekkel működőképes marad-e.
 - A szerver folyamatos karbantartása és megfelelő kezelése.
