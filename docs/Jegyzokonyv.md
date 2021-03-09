@@ -148,3 +148,27 @@
 ### Frontend/Backend
 - Fealadok átbeszélése, kiosztása
 - Trello bővítése, javítása
+
+----------------------------------
+## 7. Megbeszélés
+### Ideje: 2021. március 09.
+### Téma: Feladatkiosztás, Hibajavítás
+### Tagok
+- Soós Gergő
+- Fekete Szabolcs
+- Vasas Csaba
+- Nagy Szabolcs Máté
+- Bódi Cintia Maja
+- Rajna Franciska
+
+## Backend
+### Bejelentkezés megvalósítása
+### Elfelejtett felhasználó helyreállítása
+### Regisztráció
+### Adattáblák bővítése
+
+## Frontend
+### Értékelés és lábléc hibajavítás
+### Weboldal fejlécén felhasználói ikon létrehozása
+### Kosár dizájn
+### Dropdown menü létrehozása
