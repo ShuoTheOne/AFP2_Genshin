@@ -1,13 +1,13 @@
 
 # GenShop tesztelési terv!
 
-| **Dokumentum címe: (azonosítója)** | MuffinShop tesztterv |
+| **Dokumentum címe: (azonosítója)** | GenShop tesztterv |
 | --- | --- |
 | **Minősítés: (állapot)**_(tervezet, jóváhagyott, stb.)_ | tervezet|
-| **Verziószám:** | 0.6 |
+| **Verziószám:** | 1.0 |
 | **Projekt név:** | GenShop|
 | **Készítette:** | Genshin csapata | 
-| **Utolsó mentés kelte:** | 2021.02.19. |
+| **Utolsó mentés kelte:** | 2021.03.11. |
 | **Dokumentum célja:** | A GenShop tesztelésének bemutatása. |
 | **Fájlnév:** | Tesztterv.md |
 
@@ -41,10 +41,20 @@ _1.2_ Elvárások
 	3.6	Tesztelési feladatok, teszt-esetek leírása
 	3.7	Teszt forgatókönyv
 
+4.1 Tesztelési jegyzőkönyv
+
+4.2 Tesztelési jelentése
+
+4.3 Tesztelési elvárások
+
 4.4 Elfogadási kritériumok
+
 4.5 Kockázatkezelés
+
 4.6 Tesztjegyzőkönyv minta
+
 4.7 Tesztelési jegyzőkönyv minta
+
 ## Dokumentáció
 
 **Változtatások jegyzéke**
@@ -56,7 +66,8 @@ _1.2_ Elvárások
 | 0.5 | 2021.02.18 | Nagy Szabolcs Máté | Bővítés: tesztelési terv | 
 | 0.6 | 2021.02.19 | Vasas Csaba | Helyesírási hibák, struktúrajavítás | 
 | 0.7 | 2021.02.20 | Bódi Cintia Maja | Bővítés: Dokumentumok, eszközök, adatok, tesztelési jegyzőkönyv és jelentés |
-| 1.0 |  | |  |
+| 1.0 | 2021.03.11 | Vasas Csaba | Helyesírási hibák javítása, struktúrajavítás, tartalomjegyzék bővítés | 
+| 1.1 |  | |  |
 
 **A dokumentumot megkapják**
 
