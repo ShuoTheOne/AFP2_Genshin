@@ -63,7 +63,7 @@ body
 		background-color: purple
 	}
 
-	.profileimage
+	.profileshopcartimage
 	{
 		resize: both;
 		overflow: auto;
@@ -73,16 +73,12 @@ body
 		float: right;
 		padding-top: 15px;
 	}
-	.shopcart
-	{
-		resize: both;
-		overflow: auto;
-		padding-left: 1%;
-		padding-right: 5%;
-		width: 5%;
-		float: right;
-		padding-top: 15px;
-	}
+		.profileshopcartimage > img
+		{
+			max-height: 55px;
+			max-width: 5vw;
+		}
+
  
 /* navigációs sáv */
 #navbar
@@ -329,4 +325,31 @@ body
 	.rate > input:checked ~ label:hover ~ label,
 	.rate > label:hover ~ input:checked ~ label {
 		color: #c59b08;
+	}
+
+/* Bevásrló korás */
+#shoppingcart
+{
+	padding-left: 50px;
+	background-color: #FFFAFA;
+	width: 75vw;
+	padding-top: 20px;
+	margin: auto;
+	line-height: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	margin-top: 10vh;
+	margin-bottom: 80px;
+}
+	#shoppingcart > img
+	{
+		margin-top: 10px;
+		width: 150px;
+		height: 100px;
+	}
+	
+	#shoppingcart > table > tbody > tr> td
+	{
+		text-align: center;
 	}
