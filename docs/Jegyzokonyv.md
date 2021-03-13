@@ -151,6 +151,21 @@
 
 ----------------------------------
 ## 7. Megbeszélés
+### Ideje: 2021. március 2.
+### Téma: Adatbázis
+### Tagok
+- Soós Gergő
+- Fekete Szabolcs
+- Vasas Csaba
+- Nagy Szabolcs Máté
+- Bódi Cintia Maja
+- Rajna Franciska
+
+### Adatbázis megtervezése
+### Adattáblák létrehozása lokálisan
+
+----------------------------------
+## 8. Megbeszélés
 ### Ideje: 2021. március 09.
 ### Téma: Feladatkiosztás, Hibajavítás
 ### Tagok
