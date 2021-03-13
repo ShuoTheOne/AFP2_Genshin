@@ -2,9 +2,9 @@ var i = 0;
 var images = [];
 var time = 5000;
 
-images[0] = "../assets/images/bosschair.jpg"
-images[1] = "../assets/images/rtx30series.jpg"
-images[2] = "../assets/images/huawei.jpg"
+images[0] = "../images/bosschair.jpg"
+images[1] = "../images/rtx30series.jpg"
+images[2] = "../images/huawei.jpg"
 
 function changeImage()
 {

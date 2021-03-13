@@ -1,33 +1,37 @@
+<?php session_start(); ?>
+<?php require_once 'protected/config.php'; ?>
+<?php require_once USER_MANAGER; ?>
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
 	<meta charset="utf-8">
-	<link href="../assets/css/default.css" rel="stylesheet" type="text/css" />
+	<link href="/afp2/public/css/default.css" rel="stylesheet" type="text/css" />
 	<title> Főoldal </title>
  </head>
  <body>
 	<div id="container">
 		<div id="header">
-			<a href="main.html" class="genshin-logo"> Genshop </a>
+			<a href="index.php" class="genshin-logo"> Genshop </a>
 			<input type="search" class="search-input-box" placeholder="Keresés...">
 			<button class="search-button"> Keresés </button>
-			<a href="shoppingcart.html" class="profileshopcartimage"><img src="../assets/images/shopcart.png"></img></a>
-			<a href="login.html" class="profileshopcartimage"><img src="../assets/images/profileimage.png"></img></a>
+			<a href="protected/normal/shoppingcart.php" class="profileshopcartimage"><img src="public/images/shopcart.png"></img></a>
+			<a href="protected/user/login.php" class="profileshopcartimage"><img src="public/images/profileimage.png"></img></a>
 
 			
 		</div>
 		<div id="navbar">
 			<ul>
-				<li><a href="main.html" class="navbar-button"> Kezdőlap </a></li>
+				<li><a href="index.php" class="navbar-button"> Kezdőlap </a></li>
 				<li><a href="#" class="navbar-button"> Kategóriák </a></li>
 				<li><a href="#" class="navbar-button"> Kiemelt Ajánlatok </a></li>
-				<li><a href="subscribe.html" class="navbar-button"> Íratkozz fel hírlevelünkre </a></li>
+				<li><a href="protected/normal/subscribe.php" class="navbar-button"> Íratkozz fel hírlevelünkre </a></li>
 			</ul>
 		</div>
 		
 		
 		<div id="slideshow">
-			<script src="../assets/js/slideshow.js"> </script>
+			<script src="public/js/slideshow.js"> </script>
 			<div class="slidecontainer">
 			<img class="slideshowimage" name="slideshow">
 			<button class="slideshowBtnLeft" onclick="forceChangeImage(-1)">&#10094;</button>

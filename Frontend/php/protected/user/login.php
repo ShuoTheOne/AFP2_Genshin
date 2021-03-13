@@ -2,24 +2,24 @@
 <html lang="hu">
 <head>
 	<meta charset="utf-8">
-	<link href="../assets/css/default.css" rel="stylesheet" type="text/css" />
+	<link href="/afp2/public/css/default.css" rel="stylesheet" type="text/css" />
 	<title> GenShop - Bejelentkezés </title>
  </head>
  <body>
 	<div id="container">
 		<div id="header">
-			<a href="main.html" class="genshin-logo"> Genshop </a>
+			<a href="/afp2/index.php" class="genshin-logo"> Genshop </a>
 			<input type="text" class="search-input-box" placeholder="Keresés...">
 			<button class="search-button"> Keresés </button>
-			<a href="shoppingcart.html" class="profileshopcartimage"><img src="../assets/images/shopcart.png"></img></a>
-			<a href="login.html" class="profileshopcartimage"><img src="../assets/images/profileimage.png"></img></a>
+			<a href="/afp2/protected/normal/shoppingcart.php" class="profileshopcartimage"><img src="/afp2/public/images/shopcart.png"></img></a>
+			<a href="login.php" class="profileshopcartimage"><img src="/afp2/public/images/profileimage.png"></img></a>
 		</div>
 		<div id="navbar">
 			<ul>
-				<li><a href="main.html" class="navbar-button"> Kezdőlap </a></li>
+				<li><a href="/afp2/index.php" class="navbar-button"> Kezdőlap </a></li>
 				<li><a href="#" class="navbar-button"> Kategóriák </a></li>
 				<li><a href="#" class="navbar-button"> Kiemelt Ajánlatok </a></li>
-				<li><a href="subscribe.html" class="navbar-button"> Íratkozz fel hírlevelünkre </a></li>
+				<li><a href="/afp2/protected/normal/subscribe.php" class="navbar-button"> Íratkozz fel hírlevelünkre </a></li>
 			</ul>
 		</div>
 		
@@ -30,8 +30,8 @@
 			<input class="logininput" type="password"> <br></br>
 			<button class="loginsubmit" onclick=""> Bejelentkezés </button> <br></br>
 			
-			<a href="forgetpassword.html" class="hrefunderline"> Elfelejtett jelszó</a><br></br>
-			<a href="register.html" class="hrefunderline"> Regisztráció</a> <br></br>
+			<a href="forgetpassword.php" class="hrefunderline"> Elfelejtett jelszó</a><br></br>
+			<a href="register.php" class="hrefunderline"> Regisztráció</a> <br></br>
 		</div>
 		
 		<div id = "footer">
