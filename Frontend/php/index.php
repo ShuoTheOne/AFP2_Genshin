@@ -6,7 +6,7 @@
 <html lang="hu">
 <head>
 	<meta charset="utf-8">
-	<link href="/afp2/public/css/default.css" rel="stylesheet" type="text/css" />
+	<link href="public/css/default.css" rel="stylesheet" type="text/css" />
 	<title> Főoldal </title>
  </head>
  <body>
