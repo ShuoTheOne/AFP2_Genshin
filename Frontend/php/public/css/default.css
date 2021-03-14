@@ -365,8 +365,42 @@ body
 		height: 100px;
 	}
 	
-	#shoppingcart > table > tbody > tr> td
+	#shoppingcart > table > tbody > tr > td
 	{
 		text-align: center;
 		width: 20vw;
 	}
+
+/* Bankkártya mentési rész */
+.cardsave
+{
+	width: 360px;
+    height: 250px;
+	margin: auto;
+	text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+	line-height: 30px;
+}
+
+	.cardnumber
+	{
+		margin-top: 30px;
+	}
+	
+	.carddates
+	{
+		width: 120px;
+		margin: auto;
+	}
+		.carddatesmonth
+		{
+			float: left;
+		}
+		
+		.carddatesyear
+		{
+			float: right;
+		}
