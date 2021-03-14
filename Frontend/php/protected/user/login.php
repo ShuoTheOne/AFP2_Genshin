@@ -18,7 +18,7 @@
 			<ul>
 				<li><a href="../../index.php" class="navbar-button"> Kezdőlap </a></li>
 				<li><a href="#" class="navbar-button"> Kategóriák </a></li>
-				<li><a href="#" class="navbar-button"> Kiemelt Ajánlatok </a></li>
+				<li><a href="../normal/offers.php" class="navbar-button"> Kiemelt Ajánlatok </a></li>
 				<li><a href="../normal/subscribe.php" class="navbar-button"> Íratkozz fel hírlevelünkre </a></li>
 			</ul>
 		</div>

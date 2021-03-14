@@ -295,6 +295,45 @@ body
 	min-height: 300px;
 }
 
+#offers
+{
+	padding-left: 50px;
+	background-color: #ff8700;
+	width: 60vw;
+	padding-top: 20px;
+	margin: auto;
+	line-height: 40px;
+	font-size: 20px;
+	margin-top: 10vh;
+	margin-bottom: 80px;
+}
+
+	.offer-img > img
+	{
+		margin-top: 10px;
+		width: 200px;
+		height: 200px;
+	}
+
+		.offer-img:hover
+		{
+			background: white;
+		}
+
+
+	.offer-description
+	{
+		padding: 60px;
+  		text-align: center;
+	}
+
+	.offer-sale
+	{
+		padding: 60px;
+  		text-align: center;
+  		font-weight: bold;
+	}
+
 #opinion
 {
 	height: 250px;

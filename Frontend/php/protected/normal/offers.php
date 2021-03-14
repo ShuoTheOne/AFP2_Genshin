@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link href="../../public/css/default.css" rel="stylesheet" type="text/css" />
-	<title> Kosár </title>
+	<title> Kiemelt Ajánlatok </title>
  </head>
  <body>
 	<div id="container">
@@ -23,49 +23,32 @@
 				<li><a href="subscribe.php" class="navbar-button"> Íratkozz fel hírlevelünkre </a></li>
 			</ul>
 		</div>
-		
-		<div id="shoppingcart">
+
+		<div id="offers">
 			<table>
-				<tbody>
+				<tbody>	
 					<tr>
 						<th> Termék </th>
-						<th> Mennyiség </th>
-						<th> Egység ár </th>
-						<th> Összeg </th>
-						<th> Törlés </th>
+						<th> Leírás </th>
+						<th> Leárazás mértéke </th>
 					</tr>
+
 					<tr>
-						<td><img src="../../public/images/bosschair.jpg"></img></td>
-						<td><input type="number"></td>
-						<td>49999FT</td>
-						<td>49999FT</td>
-						<td><button> <img src="../../public/images/trash.png"></img> </button></td>
-					<tr>
-						<td><img src="../../public/images/asusvivobook.jpg"></img></td>
-						<td><input type="number"></td>
-						<td>199999FT</td>
-						<td>199999FT</td>
-						<td><button> <img src="../../public/images/trash.png"></img> </button></td>
+						<td><a href="#" class="offer-img"><img src="../../public/images/huawei.jpg"></img></a></td>
+						<td class="offer-description">MICSODA TELEFON</td>
+						<td class="offer-sale">70% OFF GOLDEN WEEK SALE EXTRAVAGANZZZZA</td>
 					</tr>
+
 					<tr>
-						<td colspan="4"></td>
-						<td> Áfa nélküli összeg: 218992FT</td>
-					</tr>
-					<tr>
-						<td colspan="4"></td>
-						<td> Áfa: 81000FT</td>
-					</tr>
-					<tr>
-						<td colspan="4"></td>
-						<td> Végösszeg: 299998FT</td>
-					</tr>
-					<tr>
-						<td colspan="4"></td>
-						<td><button> Rendelés </button></td>
+						<td><a href="#" class="offer-img"><img src="../../public/images/trash.png"></img></a></td>
+						<td class="offer-description">KUKA</td>
+						<td class="offer-sale">99% OFF</td>
 					</tr>
 				</tbody>
 			</table>
-		</div>
+   		</div>
+
+
 		<div id = "footer">
 			GenShop was made by Genshin Team 2021
 		</div>
