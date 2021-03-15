@@ -15,7 +15,6 @@ A rendszer használói a következők:
 -	vendég
 -	regisztrált
 -	adminisztrátor
-A rendszerhez tartozik még a vásárlási folyamatban használt kosár funkció is.
 
 A rendszernek a következő funkciókat kell ellátnia:
 -	az adminisztrátorok tudjanak termékeket regisztrálni és törölni
@@ -31,6 +30,7 @@ A rendszernek a következő funkciókat kell ellátnia:
 -	Az adminisztrátorok tudjanak új termékeket hozzáadni
 -	Az adminisztrátorok képesek legyenek a webshopot hibamentesen karbantartani
 -	vendégek belépés nélkül is tudnak keresni és rendelni
+-	A rendszerhez tartozik még a vásárlási folyamatban használt kosár funkció is.
 
 Előfeltételek:
 -	adminisztrátorok és regisztráltak részére a rendszer használatához jogosultság, azaz jelszó szükséges

@@ -29,7 +29,7 @@ A kész szoftver átadása a megrendelőnek.
  ![jelenlegiuzletimodell](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/imgs/jelenlegiuzletimodell.png)
 
   -----------------------------
-Igenyelt üzletimodell 
+Igényelt üzletimodell 
 
  ![igenyeltuzletimodell](https://github.com/ShuoTheOne/AFP2_Genshin/blob/main/docs/imgs/igenyeltuzletimodell.png)
 

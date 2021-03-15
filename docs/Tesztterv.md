@@ -4,10 +4,10 @@
 | **Dokumentum címe: (azonosítója)** | GenShop tesztterv |
 | --- | --- |
 | **Minősítés: (állapot)**_(tervezet, jóváhagyott, stb.)_ | tervezet|
-| **Verziószám:** | 1.0 |
+| **Verziószám:** | 1.1 |
 | **Projekt név:** | GenShop|
 | **Készítette:** | Genshin csapata | 
-| **Utolsó mentés kelte:** | 2021.03.11. |
+| **Utolsó mentés kelte:** | 2021.03.15. |
 | **Dokumentum célja:** | A GenShop tesztelésének bemutatása. |
 | **Fájlnév:** | Tesztterv.md |
 
@@ -33,6 +33,7 @@ _1.2_ Elvárások
 2.5 Tesztelési eszközök
 
 **3 Tesztelési terv**
+
 3.1 Fejlesztői teszt
 
 3.2	Integrációs teszt
@@ -76,7 +77,8 @@ _1.2_ Elvárások
 | 0.6 | 2021.02.19 | Vasas Csaba | Helyesírási hibák, struktúrajavítás | 
 | 0.7 | 2021.02.20 | Bódi Cintia Maja | Bővítés: Dokumentumok, eszközök, adatok, tesztelési jegyzőkönyv és jelentés |
 | 1.0 | 2021.03.11 | Vasas Csaba | Helyesírási hibák javítása, struktúrajavítás, tartalomjegyzék bővítés | 
-| 1.1 |  | |  |
+| 1.1 | 2021.03.15 | Vasas Csaba | Struktúrajavítás | 
+| 1.2 |  | |  |
 
 **A dokumentumot megkapják**
 
