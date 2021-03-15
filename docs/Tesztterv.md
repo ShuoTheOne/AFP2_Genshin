@@ -33,13 +33,22 @@ _1.2_ Elvárások
 2.5 Tesztelési eszközök
 
 **3 Tesztelési terv**
-	3.1 Fejlesztői teszt
-	3.2	Integrációs teszt
-	3.3	Elfogadási teszt
-	3.4	Terheléses teszt
-	3.5	Biztonsági teszt
-	3.6	Tesztelési feladatok, teszt-esetek leírása
-	3.7	Teszt forgatókönyv
+3.1 Fejlesztői teszt
+
+3.2	Integrációs teszt
+
+3.3	Elfogadási teszt
+
+3.4	Terheléses teszt
+
+3.5	Biztonsági teszt
+
+3.6	Tesztelési feladatok, teszt-esetek leírása
+
+3.7	Teszt forgatókönyv
+
+**4 Tesztelési jegyzőkönyv és tesztelési jelentés**
+
 
 4.1 Tesztelési jegyzőkönyv
 

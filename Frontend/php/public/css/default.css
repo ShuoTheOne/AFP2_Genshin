@@ -26,6 +26,7 @@ body
 	resize: both;
     overflow: auto;
 	background-color: #20B2AA;
+	min-height: 85px;
 
 }
 
@@ -443,3 +444,29 @@ body
 		{
 			float: right;
 		}
+
+/* Profil adat megváltoztatás */
+#changeprofiledatas
+{
+	background-color: #FFFAFA;
+	min-width: 400px;
+	padding-top: 20px;
+	color: red;
+	line-height: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-top: 22vh;
+	margin-bottom: 80px;
+}
+	#changeprofiledatas > table
+	{
+		margin: auto;
+	}
+	
+	#changeprofiledatas > table > tbody > tr > th
+	{
+		padding-bottom: 20px;
+	}
