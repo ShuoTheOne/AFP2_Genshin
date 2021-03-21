@@ -1,7 +1,8 @@
 package com.example.backend.controller;
 
 import com.example.backend.controller.dto.*;
-import com.example.backend.service.AuthService;
+import com.example.backend.model.UserData;
+import com.example.backend.service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 @RequiredArgsConstructor
 public class AuthController {
 
-    private AuthService authService;
+    private final AuthService authService;
+    private final SessionService sessionService;
 
     @PostMapping("/register")
     public void register(@RequestBody RegisterRequest request) {
@@ -33,12 +35,23 @@ public class AuthController {
     }
 
     @PostMapping("/request-new-password")
-    public void requestNewPassword(NewPasswordRequest request) {
+    public void requestNewPassword(@RequestBody NewPasswordRequest request) {
         authService.newPasswordRequest(request);
     }
 
     @PostMapping("/new-password")
     public void setNewPassword(@RequestParam String passwordToken, @RequestBody String newPassword) {
         authService.setNewPasswordByToken(new PasswordChangeRequest(passwordToken, newPassword));
+    }
+
+    @GetMapping("/activate")
+    private String activate(@RequestParam String token) {
+        authService.activate(token);
+        return "Sikeres aktiváció";
+    }
+
+    @GetMapping("/me")
+    public UserData me(@CookieValue(value = "login_token",defaultValue = "invalid") String token) {
+        return sessionService.bySession(token);
     }
 }

@@ -1,7 +1,6 @@
 package com.example.backend.controller.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 
 @Data
 @AllArgsConstructor

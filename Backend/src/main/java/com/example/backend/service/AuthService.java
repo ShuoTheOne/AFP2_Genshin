@@ -11,4 +11,6 @@ public interface AuthService {
     void newPasswordRequest(NewPasswordRequest request);
 
     void setNewPasswordByToken(PasswordChangeRequest request);
+
+    void activate(String token);
 }

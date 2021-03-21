@@ -3,10 +3,8 @@ package com.example.backend.controller.dto;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.lang.NonNull;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
+import javax.validation.constraints.*;
 import java.time.LocalDate;
 
 @Data

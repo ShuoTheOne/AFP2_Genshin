@@ -14,23 +14,25 @@ import java.util.*;
 @RequiredArgsConstructor
 public class AuthServiceImpl implements AuthService {
 
-    private UserRepository userRepository;
-    private SessionRepository sessionRepository;
-    private NewPasswordTokenRepository newPasswordTokenRepository;
+    private final UserRepository userRepository;
+    private final SessionRepository sessionRepository;
+    private final NewPasswordTokenRepository newPasswordTokenRepository;
     //Todo email küldő még nicns kész.
-    private EmailSenderService emailService;
+    private final EmailSenderService emailService;
 
     //Todo saját exeption és elkapó
 
     @Override
     public void register(RegisterRequest request) {
-        Optional.ofNullable(userRepository.getByEmail(request.getEmail())).orElseThrow(() ->
-            new RuntimeException(String.format("%s emailcím foglalt ", request.getEmail()))
+        Optional.ofNullable(userRepository.getByEmail(request.getEmail())).ifPresent(user ->
+            {throw new RuntimeException(String.format("%s emailcím foglalt ", user.getEmail()));}
         );
-        Optional.ofNullable(userRepository.getUserByUsername(request.getUsername())).orElseThrow(() ->
-            new RuntimeException(String.format("%s felhaszánlónév foglalt.", request.getUsername()))
+        Optional.ofNullable(userRepository.getUserByUsername(request.getUsername())).ifPresent(user ->
+            {throw new RuntimeException(String.format("%s felhaszánlónév foglalt.", request.getUsername())); }
         );
-        userRepository.save(User.createUser(request));
+        User user = User.createUser(request);
+        userRepository.save(user);
+        emailService.sendActivationMail(user);
     }
 
     @Override
@@ -40,8 +42,8 @@ public class AuthServiceImpl implements AuthService {
         );
         String salt = user.getSalt();
         String encodedPass = user.getPassword();
-        if (DigestUtils.sha256Hex(salt + loginRequest.getPassword()).equals(encodedPass)) {
-            Session session = sessionRepository.save(new Session(user, UUID.randomUUID().toString(), LocalDateTime.now(), LocalDateTime.now().plus(3, ChronoUnit.HOURS)));
+        if (DigestUtils.sha256Hex(salt + loginRequest.getPassword()).equals(encodedPass) && user.isIsregistered()) {
+            Session session = sessionRepository.save(new Session(null, user, UUID.randomUUID().toString(), LocalDateTime.now(), LocalDateTime.now().plus(3, ChronoUnit.HOURS)));
             return new SessionResponse(user.getUsername(), session.getToken());
         } else {
             throw new RuntimeException("User credentials were incorrect");
@@ -68,5 +70,14 @@ public class AuthServiceImpl implements AuthService {
         user.setPassword(request.getNewPassword());
         userRepository.save(user);
         newPasswordTokenRepository.delete(newPasswordToken);
+        emailService.sendPasswordChanged(user);
+    }
+
+    @Override
+    public void activate(String token) {
+        User user = Optional.ofNullable(userRepository.getUserBySalt(token))
+                .orElseThrow(() -> new RuntimeException("Token is not valid"));
+        user.setIsregistered(true);
+        userRepository.save(user);
     }
 }

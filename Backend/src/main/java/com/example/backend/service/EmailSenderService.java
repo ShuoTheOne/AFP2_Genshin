@@ -7,4 +7,6 @@ public interface EmailSenderService {
     void sendActivationMail(User user);
 
     void sendNewPasswordMail(NewPasswordToken newPasswordToken);
+
+    void sendPasswordChanged(User user);
 }

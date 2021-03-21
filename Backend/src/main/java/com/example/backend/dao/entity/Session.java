@@ -12,6 +12,9 @@ import java.time.LocalDateTime;
 public class Session {
 
     @Id
+    @GeneratedValue
+    private Long id;
+
     @OneToOne(cascade = CascadeType.ALL)
     private User user;
 
@@ -20,4 +23,8 @@ public class Session {
     private LocalDateTime login_time;
 
     private LocalDateTime validity;
+
+    public boolean isValid() {
+     return validity.isAfter(LocalDateTime.now());
+    }
 }

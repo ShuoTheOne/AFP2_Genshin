@@ -1,7 +1,7 @@
 package com.example.backend.controller.dto;
 
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import lombok.*;
 
 @Data
 public class NewPasswordRequest {

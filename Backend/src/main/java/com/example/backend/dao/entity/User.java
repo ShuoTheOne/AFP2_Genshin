@@ -1,9 +1,11 @@
 package com.example.backend.dao.entity;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.UUID;
 
 import com.example.backend.controller.dto.RegisterRequest;
+import com.example.backend.model.UserData;
 import lombok.*;
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -15,7 +17,6 @@ import javax.persistence.*;
 @Table
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class User {
 
     @Id
@@ -70,7 +71,7 @@ public class User {
                 request.getCountry(),
                 0,
                 false,
-                true
+                false
         );
     }
 
@@ -78,5 +79,7 @@ public class User {
         password = DigestUtils.sha256Hex(salt + newPassword);
     }
 
-    //public UserDto toUserDto(){return new UserDto(id,username,password,email,real_name,sex,birthdate,zip_code,city,street,house_number,country,genpoint,isadmin,isregistered);}
+    public UserData toUserData(){
+        return new UserData(username,email);
+    }
 }
