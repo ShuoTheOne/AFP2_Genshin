@@ -1,43 +1,30 @@
-<hr>
-<center>
-<a href="index.php">Főoldal</a>
+<div id="navbar">
+	<ul>
+	<li><a href="index.php">Főoldal</a></li>
 <?php if(!IsUserLoggedIn()) : ?>
-    <span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=login">Bejelentkezés</a>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=register">Regisztrálás</a>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=addcreditcard">Bankkártya hozzáadása</a>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=shoppingcart">Bevásárló Kosár</a>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=product">Termék</a>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=offers">Ajánlatok</a>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=#">Work in progress</a>
+    
+	<li><a href="index.php?P=login">Bejelentkezés</a></li>
+	<li><a href="index.php?P=register">Regisztrálás</a></li>
+	<li><a href="index.php?P=addcreditcard">Bankkártya hozzáadása</a></li>
+	<li><a href="index.php?P=shoppingcart">Bevásárló Kosár</a></li>
+	<li><a href="index.php?P=product">Termék</a></li>
+	<li><a href="index.php?P=offers">Ajánlatok</a></li>
+	<li><a href="index.php?P=#">Work in progress</a></li>
 <?php else : ?>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=test">Hozzáférés teszt</a>
+	<li><a href="index.php?P=test">Hozzáférés teszt</a></li>
 
 <?php if(isset($_SESSION['isregistered']) && $_SESSION['isregistered'] == 1) : ?>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=changeprofiledatas">Profil adatok módosítása</a>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=forgetpassword">Elfelejtett jelszó</a>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=#">Work in progress</a>
+	<li><a href="index.php?P=changeprofiledatas">Profil adatok módosítása</a></li>
+	<li><a href="index.php?P=forgetpassword">Elfelejtett jelszó</a></li>
+	<li><a href="index.php?P=#">Work in progress</a></li>
 <?php endif; ?>		
 
   <?php if(isset($_SESSION['isadmin']) && $_SESSION['isadmin'] == 1) : ?>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=users">Felhasználók Listája</a>
-	<span> &nbsp; | &nbsp; </span>
-	<a href="index.php?P=#">Work in Progress</a>
+	<li><a href="index.php?P=users">Felhasználók Listája</a></li>
+	<li><a href="index.php?P=#">Work in Progress</a></li>
 <?php endif; ?>
 
-<a href="index.php?P=logout">Kijelentkezés</a>
+	<li><a href="index.php?P=logout">Kijelentkezés</a></li>
 <?php endif; ?> 
- </center>
-
-<hr>
+	</ul>
+</div>

@@ -1,10 +1,7 @@
-<hr>
-<h3>
-<center>Üdvözöljük 
-<?php if(!isset($_SESSION['isregistered']) || $_SESSION['isregistered'] < 1) : ?>
-
-<?php else : ?>
-<?=$_SESSION['real_name'] ?>!
-</center>
-</h3>
-<?php endif; ?>
+<div id="header">
+			<a href="index.php" class="genshin-logo"> Genshop </a>
+			<input type="search" class="search-input-box" placeholder="Keresés...">
+			<button class="search-button"> Keresés </button>
+			<a href="protected/normal/shoppingcart.php" class="profileshopcartimage"><img src="public/images/shopcart.png"></img></a>
+			<a href="protected/user/login.php" class="profileshopcartimage"><img src="public/images/profileimage.png"></img></a>	
+</div>
