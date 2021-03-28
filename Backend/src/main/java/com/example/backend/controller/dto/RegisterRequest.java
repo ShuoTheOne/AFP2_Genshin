@@ -1,13 +1,14 @@
 package com.example.backend.controller.dto;
 
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import lombok.*;
 import org.springframework.lang.NonNull;
 
 import javax.validation.constraints.*;
 import java.time.LocalDate;
 
 @Data
+@AllArgsConstructor
 public class RegisterRequest {
 
     @NonNull
@@ -57,6 +58,5 @@ public class RegisterRequest {
     @ApiModelProperty(required = true, example = "Magyarország")
     private String country;
 
-    public RegisterRequest(String username, String password, String salt, String email, String real_name, Integer sex, LocalDate birthdate, Integer zip_code, String city, String street, Integer house_number, String country) {
-    }
+
 }

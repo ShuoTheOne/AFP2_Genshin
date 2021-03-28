@@ -21,10 +21,9 @@ public class AuthController {
     private final SessionService sessionService;
 
     @PostMapping("/register")
-    public void register(@RequestParam MultiValueMap<String,String> paramMap){
+    public void register(@RequestParam MultiValueMap<String,String> paramMap,HttpServletResponse response) throws IOException {
         String username = paramMap.get("username").get(0);
         String password = paramMap.get("password").get(0);
-        String salt = paramMap.get("salt").get(0);
         String email = paramMap.get("email").get(0);
         String real_name = paramMap.get("real_name").get(0);
         Integer sex = Integer.parseInt(paramMap.get("sex").get(0));
@@ -37,7 +36,6 @@ public class AuthController {
         RegisterRequest registerRequest = new RegisterRequest(
                 username,
                 password,
-                salt,
                 email,
                 real_name,
                 sex,
@@ -49,7 +47,7 @@ public class AuthController {
                 country
         );
         authService.register(registerRequest);
-
+        response.sendRedirect("http://localhost/frontend/php/");
     }
 
     @PostMapping("/login")
