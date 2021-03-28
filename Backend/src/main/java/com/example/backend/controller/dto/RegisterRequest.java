@@ -56,4 +56,7 @@ public class RegisterRequest {
     @NonNull
     @ApiModelProperty(required = true, example = "Magyarország")
     private String country;
+
+    public RegisterRequest(String username, String password, String salt, String email, String real_name, Integer sex, LocalDate birthdate, Integer zip_code, String city, String street, Integer house_number, String country) {
+    }
 }

@@ -17,7 +17,6 @@ public class AuthServiceImpl implements AuthService {
     private final UserRepository userRepository;
     private final SessionRepository sessionRepository;
     private final NewPasswordTokenRepository newPasswordTokenRepository;
-    //Todo email küldő még nicns kész.
     private final EmailSenderService emailService;
 
     //Todo saját exeption és elkapó
@@ -38,7 +37,7 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public SessionResponse login(LoginRequest loginRequest) {
         User user = Optional.ofNullable(userRepository.getUserByUsername(loginRequest.getUserName())).orElseThrow(() ->
-            new RuntimeException("User does not exist")
+            new RuntimeException(String.format("User does not exist %s", loginRequest.getUserName()))
         );
         String salt = user.getSalt();
         String encodedPass = user.getPassword();
