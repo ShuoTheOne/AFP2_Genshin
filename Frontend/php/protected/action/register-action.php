@@ -1,16 +1,16 @@
 <?php
 $postData = array(
-    'username' => $_POST['username'],
-    'password' => $_GET['password'],
-	'email' => $_GET['email'],
-    'real_name' => $_GET['real_name'],
-    'sex' => $_GET['sex'],
-    'birthdate' => $_GET['birthdate'],
-	'zip_code' => $_GET['zip_code'],
-    'city' => $_GET['city'],
-    'street' => $_GET['street'],
-	'house_number' => $_GET['house_number'],
-    'country' => $_GET['country']
+    'username' => ['username'],
+    'password' => ['password'],
+	'email' => ['email'],
+    'real_name' => ['real_name'],
+    'sex' => ['sex'],
+    'birthdate' => ['birthdate'],
+	'zip_code' => ['zip_code'],
+    'city' => ['city'],
+    'street' => ['street'],
+	'house_number' => ['house_number'],
+    'country' => ['country']
 );
 $ch = curl_init('http://localhost:8080/register/');
 curl_setopt_array($ch, array(

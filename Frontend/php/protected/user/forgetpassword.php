@@ -6,9 +6,13 @@
  <body>
 	<div id="container">		
 		<div id="forgetpassword">
+			<form class="modal-content animate" action="http://localhost:8080/forgetpassword" method="post">
 			E-mail cím <br></br>
-			<input class="forgetpasswordinput" type="email"> <br></br>
-			<button class="forgetpasswordsubmit" onclick=""> Újra küldés </button> <br></br>
+			<input class="forgetpasswordinput" type="email" name="email" required> <br></br>
+			Felhasználónév <br></br>
+			<input class="forgetpasswordinput" type="text" name="username" required> <br></br>
+			<button class="forgetpasswordsubmit" type="submit">Újra küldés </button> <br></br>
+			</form>
 		</div>
 	</div>
  </body>

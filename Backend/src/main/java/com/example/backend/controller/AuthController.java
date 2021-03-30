@@ -47,7 +47,7 @@ public class AuthController {
                 country
         );
         authService.register(registerRequest);
-        response.sendRedirect("http://localhost/frontend/php/");
+        response.sendRedirect("http://localhost:8081/AFP2_Genshin/Frontend/php");
     }
 
     @PostMapping("/login")
@@ -64,7 +64,7 @@ public class AuthController {
         cookie.setHttpOnly(true);
         cookie.setPath("/");
         response.addCookie(cookie);
-        response.sendRedirect("http://localhost/frontend/php/");
+        response.sendRedirect("http://localhost:8081/AFP2_Genshin/Frontend/php");
         return ResponseEntity.ok().build();
     }
 

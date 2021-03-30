@@ -10,9 +10,9 @@
 		<div id="loginpanel">
 			<form class="modal-content animate" action="http://localhost:8080/login" method="post">
 				Felhasználónév <br></br>
-				<input class="logininput" type="text" name="username"> <br></br>
+				<input class="logininput" type="text" name="username" placeholder="Felhasználónév"required> <br></br>
 				Jelszó <br></br>
-				<input class="logininput" type="password" name="password"> <br></br>
+				<input class="logininput" type="password" name="password" placeholder="Jelszó" required> <br></br>
 				<button class="loginsubmit" type="submit"> Bejelentkezés </button> <br></br>
 			</form>
 				<a href="forgetpassword.php" class="hrefunderline"> Elfelejtett jelszó</a><br></br>
