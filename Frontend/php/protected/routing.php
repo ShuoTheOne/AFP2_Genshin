@@ -22,7 +22,7 @@ switch ($_GET['P']) {
 
 	case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
 
-	case 'addcreditcard': IsUserLoggedIn() ? require_once PROTECTED_DIR.'normal/addcreditcard.php' : header('Location: index.php'); break;
+	case 'addcreditcard': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'normal/addcreditcard.php' : header('Location: index.php'); break;
 
 	case 'forgetpassword': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/forgetpassword.php' : header('Location: index.php'); break;
 
