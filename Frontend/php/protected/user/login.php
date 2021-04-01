@@ -15,8 +15,8 @@
 				<input class="logininput" type="password" name="password" placeholder="Jelszó" required> <br></br>
 				<button class="loginsubmit" type="submit"> Bejelentkezés </button> <br></br>
 			</form>
-				<a href="forgetpassword.php" class="hrefunderline"> Elfelejtett jelszó</a><br></br>
-				<a href="register.php" class="hrefunderline"> Regisztráció</a> <br></br>
+				<a href="index.php?P=forgetpassword" class="hrefunderline"> Elfelejtett jelszó</a><br></br>
+				<a href="index.php?P=register" class="hrefunderline"> Regisztráció</a> <br></br>
 		</div>
 	</div>
  </body>
