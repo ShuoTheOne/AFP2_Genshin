@@ -26,5 +26,7 @@ public class Product {
 
     private String img_url;
 
+    private String category;
+
     //public ProductDto toProductDto(){return new ProductDto(id,name,value,description,amount,img_url);}
 }

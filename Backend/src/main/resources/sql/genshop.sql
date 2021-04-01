@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1:3306
--- Létrehozás ideje: 2021. Már 05. 11:20
+-- Létrehozás ideje: 2021. Ápr 01. 09:24
 -- Kiszolgáló verziója: 5.7.31
 -- PHP verzió: 7.3.21
 
@@ -43,6 +43,24 @@ CREATE TABLE IF NOT EXISTS `buy` (
 -- --------------------------------------------------------
 
 --
+-- Tábla szerkezet ehhez a táblához `credit_card`
+--
+
+DROP TABLE IF EXISTS `credit_card`;
+CREATE TABLE IF NOT EXISTS `credit_card` (
+  `id` int(11) NOT NULL,
+  `card_number` int(11) NOT NULL,
+  `cvc` int(11) NOT NULL,
+  `expiration_date` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FKh4wi9724muee2kp2c4ku1yia2` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Tábla szerkezet ehhez a táblához `hibernate_sequence`
 --
 
@@ -56,7 +74,22 @@ CREATE TABLE IF NOT EXISTS `hibernate_sequence` (
 --
 
 INSERT INTO `hibernate_sequence` (`next_val`) VALUES
-(1);
+(4);
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `new_password_token`
+--
+
+DROP TABLE IF EXISTS `new_password_token`;
+CREATE TABLE IF NOT EXISTS `new_password_token` (
+  `id` int(11) NOT NULL,
+  `new_password_token` varchar(255) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK42mia7pk06rdodfhv13i16w1k` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -68,6 +101,7 @@ DROP TABLE IF EXISTS `product`;
 CREATE TABLE IF NOT EXISTS `product` (
   `id` int(11) NOT NULL,
   `amount` int(11) NOT NULL,
+  `category` varchar(255) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
   `img_url` varchar(255) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
@@ -97,6 +131,22 @@ CREATE TABLE IF NOT EXISTS `rating` (
 -- --------------------------------------------------------
 
 --
+-- Tábla szerkezet ehhez a táblához `session`
+--
+
+DROP TABLE IF EXISTS `session`;
+CREATE TABLE IF NOT EXISTS `session` (
+  `id` bigint(20) NOT NULL,
+  `login_time` datetime(6) DEFAULT NULL,
+  `token` varchar(255) DEFAULT NULL,
+  `validity` datetime(6) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK1bi1pmqjgipw7dx3j6bl37dja` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+--
 -- Tábla szerkezet ehhez a táblához `user`
 --
 
@@ -113,6 +163,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `isregistered` bit(1) NOT NULL,
   `password` varchar(255) DEFAULT NULL,
   `real_name` varchar(255) DEFAULT NULL,
+  `salt` varchar(255) DEFAULT NULL,
   `sex` int(11) NOT NULL,
   `street` varchar(255) DEFAULT NULL,
   `username` varchar(255) DEFAULT NULL,
@@ -132,11 +183,29 @@ ALTER TABLE `buy`
   ADD CONSTRAINT `FKkhggp13kai501c16q0o3xt1ap` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 
 --
+-- Megkötések a táblához `credit_card`
+--
+ALTER TABLE `credit_card`
+  ADD CONSTRAINT `FKh4wi9724muee2kp2c4ku1yia2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
+
+--
+-- Megkötések a táblához `new_password_token`
+--
+ALTER TABLE `new_password_token`
+  ADD CONSTRAINT `FK42mia7pk06rdodfhv13i16w1k` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
+
+--
 -- Megkötések a táblához `rating`
 --
 ALTER TABLE `rating`
   ADD CONSTRAINT `FKlkuwie0au2dru36asng9nywmh` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`),
   ADD CONSTRAINT `FKpn05vbx6usw0c65tcyuce4dw5` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
+
+--
+-- Megkötések a táblához `session`
+--
+ALTER TABLE `session`
+  ADD CONSTRAINT `FK1bi1pmqjgipw7dx3j6bl37dja` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

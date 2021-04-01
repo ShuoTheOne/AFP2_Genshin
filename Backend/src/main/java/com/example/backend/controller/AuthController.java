@@ -5,6 +5,7 @@ import com.example.backend.model.UserData;
 import com.example.backend.service.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +20,9 @@ public class AuthController {
 
     private final AuthService authService;
     private final SessionService sessionService;
+    @Value("${frontend.url.php}")
+    private String frontEndUrl;
+
 
     @PostMapping("/register")
     public void register(@RequestParam MultiValueMap<String,String> paramMap,HttpServletResponse response) throws IOException {
@@ -47,7 +51,7 @@ public class AuthController {
                 country
         );
         authService.register(registerRequest);
-        response.sendRedirect("http://localhost:8081/AFP2_Genshin/Frontend/php");
+        response.sendRedirect(frontEndUrl + "/php");
     }
 
     @PostMapping("/login")
@@ -64,7 +68,7 @@ public class AuthController {
         cookie.setHttpOnly(true);
         cookie.setPath("/");
         response.addCookie(cookie);
-        response.sendRedirect("http://localhost:8081/AFP2_Genshin/Frontend/php");
+        response.sendRedirect(frontEndUrl + "/php");
         return ResponseEntity.ok().build();
     }
 
