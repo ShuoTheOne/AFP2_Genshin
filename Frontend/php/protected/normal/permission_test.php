@@ -1,12 +1,11 @@
 <center>
 <?php 
-	$query = "SELECT real_name, email, permission FROM users";
+	$query = "SELECT id, isregistered FROM users";
 	require_once DATABASE_CONTROLLER;
-	$users = getList($query);
-	?>
+	$users = getList($query); ?>
 
 <?php if(!isset($_SESSION['isregistered']) || $_SESSION['isregistered'] < 1) : ?>
-	<h2>Hozzáférés megtagadva! Kérjen jogosultságot egy admintól!</h2>
+	<h2>Hozzáférés megtagadva! Jelentkezzen be!</h2>
 	Hozzáférés teszt: <?=isset($_SESSION['isregistered']) ? $_SESSION['isregistered'] : "Nincs hozzáférési szintje." ?>
 
 

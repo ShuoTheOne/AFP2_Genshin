@@ -1,6 +1,6 @@
 <?php 
 function IsUserLoggedIn() {
-	return $_SESSION  != null && array_key_exists('uid', $_SESSION) && is_numeric($_SESSION['uid']);
+	return $_SESSION  != null && array_key_exists('id', $_SESSION);
 }
 
 function UserLogout() {
@@ -9,19 +9,25 @@ function UserLogout() {
 	header('Location: index.php');
 }
 
-function UserLogin($email, $password) {
-	$query = "SELECT id, birthdate, city, country, email, genpoint, house_number, isadmin, isregistered, password, real_name, sex, street, username, zip_code FROM users WHERE email = :email AND password = :password";
+function CheckRegister() {
+#tobewritten
+
+}
+
+function UserLogin($username, $password) {
+	$query = "SELECT id, birthdate, city, country, email, genpoint, house_number, isadmin, isregistered, password, real_name, sex, street, username, zip_code FROM users WHERE username = :username AND password = :password";
 	$params = [
-		':email' => $email,
+		':username' => $username,
 		':password' => sha1($password)
 	]; 
 
 	require_once DATABASE_CONTROLLER;
 	$record = getRecord($query, $params);
 	if(!empty($record)) {
-		$_SESSION['uid'] = $record['id'];
+		$_SESSION['id'] = $record['id'];
 		$_SESSION['birthdate'] = $record['birthdate'];
 		$_SESSION['city'] = $record['city'];
+		$_SESSION['country'] = $record['country'];
 		$_SESSION['email'] = $record['email'];
 		$_SESSION['genpoint'] = $record['genpoint'];
 		$_SESSION['house_number'] = $record['house_number'];

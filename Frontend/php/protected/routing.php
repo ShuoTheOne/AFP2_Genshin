@@ -28,6 +28,10 @@ switch ($_GET['P']) {
 
 	case 'changeprofiledatas': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/changeprofiledatas.php' : header('Location: index.php'); break;
 
+	case 'user_list': IsUserLoggedIn() ? require_once PROTECTED_DIR.'admin/user_list.php' : header('Location: index.php'); break;
+
+	case 'edit_user': IsUserLoggedIn() ? require_once PROTECTED_DIR.'admin/edit_user.php' : header('Location: index.php'); break;
+
 	default: require_once PROTECTED_DIR.'normal/404.php'; break;
 }
 
