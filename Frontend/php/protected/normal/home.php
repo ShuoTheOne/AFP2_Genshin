@@ -1,3 +1,12 @@
+<div id="block1">Szöveg</div>
+<div id="block2"><canvas class="webgl"></canvas></div> 
+<!--<canvas class="webgl"></canvas>-->
+<script type=module src="./public/js/fooldal1.js"></script>
+
+
+
+
+
 <script src="public/js/slideshow.js"> </script>
 	<div class="slidecontainer">
 		<img class="slideshowimage" name="slideshow">

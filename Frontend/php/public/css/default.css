@@ -19,6 +19,11 @@ body
 	
 }
 
+header
+{
+	min-height: 8%;
+}
+
 /* Fejléc rész */
 #header
 {
@@ -26,8 +31,7 @@ body
 	resize: both;
     overflow: auto;
 	background-color: #20B2AA;
-	min-height: 85px;
-
+	height: 100%;
 }
 
 	.genshin-logo
@@ -49,6 +53,7 @@ body
 		padding-left: 10px;
 		border-radius: 20px;
 		padding-right: 10px;
+		max-width: 60%;
 	}
 	
 	.search-input-box:active
@@ -92,12 +97,17 @@ body
 		width:25%;
 		height:25%;
 	}
-
  
+nav
+{
+	min-height: 7%;
+}
+
 /* navigációs sáv */
 #navbar
 {
 	min-width: 1000px;
+	min-height: 50%;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: #F5F5F5;
@@ -130,6 +140,44 @@ body
 		border: solid 2px black;
 		border-radius: 40px;
 	}
+
+#block_container
+{
+    text-align:center;
+    width: 80%;
+    height: 500px;
+
+    margin: auto;
+  	padding: 10px;
+}
+
+#block1, #block2
+{
+    display:inline;
+}
+
+#block2
+{
+	margin: 10px;
+	padding: 10px;
+	min-height: 400px;
+	min-width: 400px;
+	width: 100%;
+}
+
+
+#block2 > canvas
+{
+	width: 700;
+	height: 500;
+}
+
+content > canvas
+{
+	width: 1000;
+	height: 700;
+}
+
 
 /* Kiemelt ajánlatok lapozó */
 #slideshow
@@ -166,9 +214,16 @@ body
 	padding-bottom: 450px;
 }
 
+footer
+{
+	height: 2%;
+	min-height: 22px;
+}
+
 /* Lábléc rész */
 #footer
 {
+	height: 100%;
 	text-align: center;
 	margin-top: auto;
 	font-size: 18px;
@@ -296,6 +351,17 @@ body
 	min-height: 300px;
 }
 
+	#product-bottom > table
+	{
+		width: 100%;
+	}
+
+	#product-bottom > table > tbody > tr > td
+	{
+		text-align: center;
+		width: 20vw;
+	}
+
 #offers
 {
 	padding-left: 50px;
@@ -338,7 +404,7 @@ body
 #opinion
 {
 	height: 250px;
-	width: 50vw;
+	width: 35vw;
 }
 
 #opinionstartext
@@ -349,8 +415,12 @@ body
 
 /* Opinion stars */
 .rate {
+    min-height: 35px;
     height: 46px;
-    padding: 0 10px;
+	margin: auto;
+  	width: 50%;
+	text-align: center;
+  	padding: 10px;
 }
 	.rate:not(:checked) > input {
 		position:absolute;

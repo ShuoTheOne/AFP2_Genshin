@@ -23,20 +23,30 @@
 			
 			</div>
 			<div id="product-bottom">
-				<textarea id="opinion" name="productopinion" placeholder="Írj véleményet..."></textarea><br></br>
-				<p id="opinionstartext"> Értékelés: </p>
-				<div class="rate">
-					<input type="radio" id="star5" name="rate" value="5" />
-					<label for="star5" title="text">5</label>
-					<input type="radio" id="star4" name="rate" value="4" />
-					<label for="star4" title="text">4</label>
-					<input type="radio" id="star3" name="rate" value="3" />
-					<label for="star3" title="text">3</label>
-					<input type="radio" id="star2" name="rate" value="2" />
-					<label for="star2" title="text">2</label>
-					<input type="radio" id="star1" name="rate" value="1" />
-					<label for="star1" title="text">1</label>
-				</div>
+				<table>
+					<tbody>
+						<tr>
+							<td width="60%"><textarea id="opinion" name="productopinion" placeholder="Írj véleményt..."></textarea><br></br></td>
+							<td width="40%">
+								<div class="rate">
+									<input type="radio" id="star5" name="rate" value="5" />
+									<label for="star5" title="text">5</label>
+									<input type="radio" id="star4" name="rate" value="4" />
+									<label for="star4" title="text">4</label>
+									<input type="radio" id="star3" name="rate" value="3" />
+									<label for="star3" title="text">3</label>
+									<input type="radio" id="star2" name="rate" value="2" />
+									<label for="star2" title="text">2</label>
+									<input type="radio" id="star1" name="rate" value="1" />
+									<label for="star1" title="text">1</label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				
+				
 				<button id="opinionsendbutton" onclick=""> Küldés </button> 
 			</div>
 		</div>
