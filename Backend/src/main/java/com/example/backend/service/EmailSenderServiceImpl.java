@@ -14,6 +14,8 @@ import org.springframework.stereotype.Service;
 public class EmailSenderServiceImpl implements EmailSenderService {
 
     private final MailjetClient client;
+    @Value("${frontend.url.php}")
+    private String frontEndUrl;
 
     @Value("${email.sender.address}")
     private String senderEmailAddress;
@@ -28,7 +30,7 @@ public class EmailSenderServiceImpl implements EmailSenderService {
     private String frontendUrl;
 
     private static final String ACTIVATION_LINK = "/activate?token=";
-    private static final String NEW_PASSWORD_LINK = "/TBD/";
+    private static final String NEW_PASSWORD_LINK = "/forgetpassword-repassword/";
 
     @Override
     public void sendActivationMail(User user) {
@@ -36,7 +38,7 @@ public class EmailSenderServiceImpl implements EmailSenderService {
                 user,
                 "Successful registration in Webshop.",
                 "Sikeres regisztráció a Webshopban",
-                String.format("Ha szeretné megerősíteni a regisztrációját kérem kattintson az alábbi linkre: <a href=\"%s%s%s\">Ide<\\a>", applicationUrl, ACTIVATION_LINK, user.getSalt())
+                String.format("Ha szeretné megerősíteni a regisztrációját kérem kattintson az alábbi linkre: <p><a href=\"%s%s%s\">Ide</a></p>", applicationUrl, ACTIVATION_LINK, user.getSalt())
         );
         SendEmailsRequest request = SendEmailsRequest
                 .builder()
@@ -55,7 +57,7 @@ public class EmailSenderServiceImpl implements EmailSenderService {
                 newPasswordToken.getUser(),
                 "Password change request.",
                 "Jelszóváltoztatási kérelem",
-                String.format("Jeleszóváltoztatáshoz kérem kattintson az alábbi linkre: %s%s%s", frontendUrl, NEW_PASSWORD_LINK, newPasswordToken.getNewPasswordToken())
+                String.format("Jeleszóváltoztatáshoz kérem kattintson az alábbi <p><a href=\"%s%s%s\">Ide</a></p>", frontEndUrl, NEW_PASSWORD_LINK, newPasswordToken.getNewPasswordToken())
         );
         SendEmailsRequest request = SendEmailsRequest
                 .builder()

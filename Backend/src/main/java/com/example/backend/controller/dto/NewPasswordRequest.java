@@ -4,6 +4,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
 @Data
+@AllArgsConstructor
 public class NewPasswordRequest {
 
     @ApiModelProperty(required = true, example = "Teszt")

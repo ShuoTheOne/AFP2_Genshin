@@ -1,8 +1,10 @@
 package com.example.backend.controller;
 
 import com.example.backend.controller.dto.*;
+import com.example.backend.dao.ProductRepository;
 import com.example.backend.model.UserData;
 import com.example.backend.service.*;
+import io.swagger.models.auth.In;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.*;
@@ -51,7 +53,7 @@ public class AuthController {
                 country
         );
         authService.register(registerRequest);
-        response.sendRedirect(frontEndUrl + "/php");
+        response.sendRedirect(frontEndUrl + "/php/index.php?P=login");
     }
 
     @PostMapping("/login")
@@ -73,8 +75,15 @@ public class AuthController {
     }
 
     @PostMapping("/request-new-password")
-    public void requestNewPassword(@RequestBody NewPasswordRequest request) {
-        authService.newPasswordRequest(request);
+    public void requestNewPassword(@RequestParam MultiValueMap<String,String> paramMap,HttpServletResponse response) throws IOException {
+        String username = paramMap.get("username").get(0);
+        String email = paramMap.get("email").get(0);
+        NewPasswordRequest NewPasswordRequest = new NewPasswordRequest(
+                username,
+                email
+        );
+        authService.newPasswordRequest(NewPasswordRequest);
+        response.sendRedirect(frontEndUrl + "/php");
     }
 
     @PostMapping("/new-password")
