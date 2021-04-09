@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
 	<meta charset="utf-8">
-	<link href="../../public/css/default.css" rel="stylesheet" type="text/css" />
+
 	<title> GenShop - Bejelentkezés </title>
  </head>
  <body>

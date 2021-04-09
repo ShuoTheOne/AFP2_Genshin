@@ -20,6 +20,8 @@ switch ($_GET['P']) {
 
 	case 'register': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/register.php' : header('Location: index.php'); break;
 
+	case 'profil': !IsUserLoggedIn()? require_once PROTECTED_DIR.'user/profile.php' : header('Location: index.php'); break;
+
 	case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
 
 	case 'addcreditcard': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'normal/addcreditcard.php' : header('Location: index.php'); break;
