@@ -187,3 +187,30 @@
 ### Weboldal fejlécén felhasználói ikon létrehozása
 ### Kosár dizájn
 ### Dropdown menü létrehozása
+
+----------------------------------
+## 9. Megbeszélés
+### Ideje: 2021. április 10.
+### Téma: Oldal felkészítése prototípusra
+### Tagok
+- Fekete Szabolcs
+- Vasas Csaba
+- Nagy Szabolcs Máté
+
+## Backend
+### Exceptionok létrehozása
+### Bankkártya controllerhez adása
+
+## Frontend
+### Elhelyezkedési és kinézeti problémák javítása
+#### Keresési box mérete
+#### Profilkép és kosár méretezési opció levétele
+#### Kezdőlapon slideshow középre hozása
+#### Lábléc oldal alján
+#### Rossz login esetén megfelelő exception dobása
+#### Regisztrációnál számhoz ne lehessen szöveget írni / születési dátumnál mai dátum ne lehessen
+#### Exception elkapása
+#### Aktiválás esetén a megfelelő oldal létrehozása
+#### Nav bar-on hover margin javítás
+#### Operán cookiek nem működnek
+
