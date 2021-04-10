@@ -2,7 +2,6 @@
 <html lang="hu">
 <head>
 	<meta charset="utf-8">
-
 	<title> GenShop - Bejelentkezés </title>
  </head>
  <body>

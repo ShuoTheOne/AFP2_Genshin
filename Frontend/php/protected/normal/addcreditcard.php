@@ -6,6 +6,7 @@
 	<title> GenShop - Kártya hozzáadás </title>
  </head>
 	<body>
+	<div id="container">
 		<div class="cardsave">
 			Bankkártya hozzáadása <br>
 			<form class="modal-content animate" action="http://localhost:8080/addcreditcard" method="post">
@@ -55,5 +56,6 @@
 				<button type="submit" class="cardsavebtn"><a href="#">Mentés</a></button>
 		</form>
 		</div>
+	</div>
 	</body>
  </html>

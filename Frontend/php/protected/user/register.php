@@ -31,7 +31,7 @@
 				<input type="text" class="registerinput" name="country" required> <br></br>
 				<button class="registersubmit" type="submit"> Regisztrálás </button> <br></br>
 			</form>
-				<a href="login.php" class="hrefunderline"> Rendelkezem felhasználóval </a> 
+				<a href="index.php?P=login" class="hrefunderline"> Rendelkezem felhasználóval </a> 
 		</div>
 	</div>
  </body>

@@ -2,10 +2,7 @@
 	<ul>
 		<li><a href="index.php">Főoldal</a></li>
 	<?php if(!IsUserLoggedIn()) : ?>
-		<li><a href="index.php?P=login">Bejelentkezés</a></li>
-		<li><a href="index.php?P=register">Regisztrálás</a></li>
 	<?php endif; ?>
-
 
 	<div class="dropdown">
         <div class="dropbtn">Dropdown</div>
@@ -70,11 +67,9 @@
 
 
 
-
 		<li><a href="index.php?P=test">Hozzáférés</a></li>
 		<li><a href="index.php?P=profil">Profil</a></li>
 		<li><a href="index.php?P=addcreditcard">Bankkártya hozzáadása</a></li>
-		<li><a href="index.php?P=shoppingcart">Bevásárló Kosár</a></li>
 		<li><a href="index.php?P=product">Termék</a></li>
 		<li><a href="index.php?P=offers">Ajánlatok</a></li>
 	<?php if(isset($_SESSION['isregistered']) && $_SESSION['isregistered'] == 1) : ?>

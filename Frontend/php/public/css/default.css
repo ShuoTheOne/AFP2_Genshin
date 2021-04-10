@@ -18,42 +18,33 @@ body
 	flex-direction: column;
 	
 }
-
-header
-{
-	min-height: 8%;
-}
-
 /* Fejléc rész */
 #header
 {
-	position: sticky;
-	resize: both;
-    overflow: auto;
+	min-width: 1200px;
+	overflow: auto;
 	background-color: #20B2AA;
 	height: 100%;
+	padding-bottom: 5px;
 }
 
 	.genshin-logo
 	{
-		resize: both;
 		overflow: auto;
 		font-size: 70px;
 		color: #FA2605;
 		text-decoration: none;
-		padding-left: 3%;
-		padding-right: 5%; 
+		padding-left: 5vw;
+		padding-right: 7vw; 
 	}
 
 	.search-input-box
 	{
-		resize: both;
 		overflow: auto;
-		width: 40% ;
+		width: 45vw;
 		padding-left: 10px;
 		border-radius: 20px;
 		padding-right: 10px;
-		max-width: 60%;
 	}
 	
 	.search-input-box:active
@@ -63,7 +54,6 @@ header
 
 	.search-button
 	{
-		resize: both;
 		overflow: auto;
 		background-color: lightgrey;
 		width: auto;
@@ -79,18 +69,11 @@ header
 
 	.profileshopcartimage
 	{
-		resize: both;
-		overflow: auto;
-		padding-right: 2%;
-		width: 5%;	
+		padding-right: 10px;
+		width: 5vw;	
 		float: right;
-		padding-top: 15px;
+		padding-top: 2vh;
 	}
-		.profileshopcartimage > img
-		{
-			max-height: 55px;
-			max-width: 5vw;
-		}
 
 	.trash
 	{
@@ -133,12 +116,14 @@ nav
 		font-weight: bold;
 		font-size: 20px;
 		text-decoration: none;
+		border: solid 2px #F5F5F5;
+		border-radius: 20px;
 	}
 
 	#navbar > ul > li > a:hover
 	{
 		border: solid 2px black;
-		border-radius: 40px;
+		border-radius: 20px;
 	}
 
 	.dropdown {
@@ -235,32 +220,23 @@ content > canvas
 
 
 /* Kiemelt ajánlatok lapozó */
-#slideshow
+.slidecontainer
 {
-	width: 800px;
-	height: 500px;
 	margin: auto;
-	text-align: center;	
-	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-
+	width: 70vw;
+	height: 50vh;
+}
+.slideshowimage
+{
+	width: 70vw;
+	height: 50vh;	
 }
 
-	.slideshowimage
-	{
-		width: 800px;
-		height: 500px;	
-		
-	}
-
-	.slideshowBtnLeft, .slideshowBtnRight
-	{
-		width: 50px;
-		height: 30px;
-	}
+.slideshowBtnLeft, .slideshowBtnRight
+{
+	width: 5vw;
+	height: 3vh;
+}
 
 
 /* Fő rész */

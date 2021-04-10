@@ -8,7 +8,6 @@
 	<meta charset="utf-8">
 	<link href="public/css/default.css" rel="stylesheet" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<title> Főoldal </title>
  </head>
  <body>

@@ -4,8 +4,7 @@ $postData = array(
 	'cardnumber' => ['cardnumber'],
 	'cardmonth' => ['cardmonth'],
 	'cardyear' => ['cardyear'],
-	'cvc' => ['cvc'],
-
+	'cvc' => ['cvc']
 );
 $ch = curl_init('http://localhost:8080/addcreditcard/');
 curl_setopt_array($ch, array(
