@@ -1,9 +1,12 @@
-<div id="block1">Szöveg</div>
+<html>
+<center>
 <div id="block2"><canvas class="webgl"></canvas></div> 
 <!--<canvas class="webgl"></canvas>-->
 <script type=module src="./public/js/fooldal1.js"></script>
-
-
+<br>
+<div id="block1">A fenti termék leírása</div>
+</center>
+</html>
 
 
 

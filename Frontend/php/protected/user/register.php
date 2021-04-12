@@ -3,6 +3,21 @@
 <head>
 	<meta charset="utf-8">
  </head>
+
+ <style>
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+</style>
+
  <body>
 	<div id="container">		
 		<div id="registerpanel">
@@ -10,7 +25,7 @@
 				Felhasználónév <br></br>
 				<input type="text" class="registerinput" name="username" required> <br></br>
 				Jelszó <br></br>
-				<input type="password" class="registerinput" name="password" minlength="8" required> <br></br>
+				<input type="password" class="registerinput" name="password" min="8" max="64" required> <br></br>
 				E-mail <br></br>
 				<input type="email" class="registerinput" name="email" required> <br></br>
 				Teljes név <br></br>
@@ -23,7 +38,7 @@
 					<option value="2">Egyéb</option>
 				</select> <br></br>
 				Születési dátum <br></br>
-				<input type='date' class="registerinput" name="date" min="1900-01-01" max="2021-01-01" required><br></br>
+				<input type='date' class="registerinput" name="birthdate" min="1900-01-01" max="2021-01-01" required><br></br>
 				Irányítószám <br></br>
 				<input type="number" class="registerinput" name="zip_code" min="1000" max="9999" required> <br></br>
 				Város <br></br>
@@ -31,9 +46,9 @@
 				Út/utca <br></br>
 				<input type="text" class="registerinput" name="street" minlength="2" required> <br></br>
 				Házszám <br></br>
-				<input type="number" class="registerinput" name="house_number" min="1" required> <br></br>
+				<input type="number" class="registerinput" name="house_number" min="1" max ="9999" required> <br></br>
 				Ország <br></br>
-				<input type="text" class="registerinput" name="country" minlength="2" required> <br></br>
+				<input type="text" class="registerinput" name="country" minlength="2" maxlength="20" required> <br></br>
 				<button class="registersubmit" type="submit"> Regisztrálás </button> <br></br>
 			</form>
 				<a href="index.php?P=login" class="hrefunderline"> Rendelkezem felhasználóval </a> 

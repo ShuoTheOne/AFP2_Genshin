@@ -11,7 +11,7 @@
 			<input class="forgetpasswordinput" type="email" name="email" required> <br></br>
 			Felhasználónév <br></br>
 			<input class="forgetpasswordinput" type="text" name="username" required> <br></br>
-			<button class="forgetpasswordsubmit" type="submit">Újra küldés </button> <br></br>
+			<button class="forgetpasswordsubmit" type="submit">Újraküldés </button> <br></br>
 			</form>
 		</div>
 	</div>

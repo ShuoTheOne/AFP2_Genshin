@@ -7,7 +7,7 @@
 		<?php if(!IsUserLoggedIn()) : ?>
 			<a href="./index.php?P=login" class="profileshopcartimage"><img src="public/images/profileimage.png" width="50" height="50"></img></a>
 		<?php else : ?>
-			<a href="./index.php?P=profil" class="profileshopcartimage"><img src="public/images/placeholderavatar.png"></img></a>
+			<a href="./index.php?P=profil" class="profileshopcartimage"><img src="public/images/placeholderavatar.png" width="50" height="50"></img></a>
 		<?php endif; ?>
 		
 	</form>

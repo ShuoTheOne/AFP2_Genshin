@@ -1,17 +1,14 @@
 <?php 
 function IsUserLoggedIn() {
-	return $_SESSION  != null && array_key_exists('id', $_SESSION);
+	return $_COOKIE  != null && array_key_exists('login_token', $_COOKIE);
 }
 
 function UserLogout() {
-	session_unset();
-	session_destroy();
-	header('Location: index.php');
+	if (isset($_COOKIE['login_token'])) {
+    unset($_COOKIE['login_token']);
+    setcookie('login_token', '', time() - 3600, '/');
 }
-
-function CheckRegister() {
-#tobewritten
-
+	header('Location: index.php');
 }
 
 function UserLogin($username, $password) {

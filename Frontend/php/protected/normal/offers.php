@@ -16,8 +16,8 @@
 					</tr>
 					<tr>
 						<td><a href="#" class="offer-img"><img src="public/images/huawei.jpg"></img></a></td>
-						<td class="offer-description">MICSODA TELEFON</td>
-						<td class="offer-sale">70% OFF GOLDEN WEEK SALE EXTRAVAGANZZZZA</td>
+						<td class="offer-description">CSÚCSKATEGÓRIÁS TELEFON</td>
+						<td class="offer-sale">70% OFF GOLDEN WEEK SALE</td>
 					</tr>
 					<tr>
 						<td><a href="#" class="offer-img"><img src="public/images/trash.png"></img></a></td>

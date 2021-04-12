@@ -1,17 +1,14 @@
+<div id="container">
 <center>
-<?php 
-	$query = "SELECT id, isregistered FROM users";
-	require_once DATABASE_CONTROLLER;
-	$users = getList($query); ?>
 
-<?php if(!isset($_SESSION['isregistered']) || $_SESSION['isregistered'] < 1) : ?>
-	<h2>Hozzáférés megtagadva! Jelentkezzen be!</h2>
-	Hozzáférés teszt: <?=isset($_SESSION['isregistered']) ? $_SESSION['isregistered'] : "Nincs hozzáférési szintje." ?>
+<?php if(!IsUserLoggedIn()) : ?>
+	<h2>Hozzáférés: Nem regisztrált</h2>
+	<h2>Szint: Vendég </h2>
 
-
-<?php elseif(isset($_SESSION['isregistered']) && $_SESSION['isregistered'] == 1) : ?>
+<?php elseif(IsUserLoggedIn()) : ?>
 	<h2>I am a super tag</h2>
 	<h2>Szint: Bejelentkezett </h2>
 
 <?php endif; ?>
 </center>
+</div>

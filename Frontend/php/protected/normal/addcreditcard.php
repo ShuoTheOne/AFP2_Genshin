@@ -5,13 +5,28 @@
 	<meta http-equiv="refresh" content="5">
 	<title> GenShop - Kártya hozzáadás </title>
  </head>
+
+<style>
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+</style>
+
 	<body>
 	<div id="container">
 		<div class="cardsave">
 			Bankkártya hozzáadása <br>
 			<form class="modal-content animate" action="http://localhost:8080/addcreditcard" method="post">
 				<input type="text" class="cardcvvtext" placeholder="Kártyatulajdonos neve"  name="cardownername">
-				<input type="text" class="cardnumber" placeholder="1234 5678 9123 4567" name="cardnumber">
+				<input type="number" class="cardnumber" placeholder="1234 5678 9123 4567" name="cardnumber">
 				<div class="carddates">
 				  <div class="carddatesmonth">
 					<select name="cardmonth">
@@ -46,7 +61,7 @@
 				</div>
 				<div class="card-verification">
 				  <div class="cardcvv">
-					<input type="text" placeholder="CVV" name="cvc">
+					<input type="number" placeholder="CVV" name="cvc">
 				  </div>
 				  <div class="cardcvvtext">
 					3 számjegy amely a kártya <br>

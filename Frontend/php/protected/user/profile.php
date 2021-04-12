@@ -8,6 +8,10 @@
 </head>
 <body>
 	<div id="container">
+		<center>
+		<h2>Content: Work in progress</h2>
+		<h2><a href="index.php?P=changeprofiledatas">Adatok módosítása</a></h2>
+		</center>
 	</div>
 </body>
 </html>
