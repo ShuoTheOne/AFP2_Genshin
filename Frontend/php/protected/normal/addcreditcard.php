@@ -2,7 +2,6 @@
 <html lang="hu">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="refresh" content="5">
 	<title> GenShop - Kártya hozzáadás </title>
  </head>
 
@@ -25,11 +24,12 @@ input[type=number] {
 		<div class="cardsave">
 			Bankkártya hozzáadása <br>
 			<form class="modal-content animate" action="http://localhost:8080/addcreditcard" method="post">
-				<input type="text" class="cardcvvtext" placeholder="Kártyatulajdonos neve"  name="cardownername">
-				<input type="number" class="cardnumber" placeholder="1234 5678 9123 4567" name="cardnumber">
+				<input type="text" class="cardcvvtext" placeholder="Kártyatulajdonos neve"  name="cardownername" required>
+				<input type="number" class="cardnumber" placeholder="1234 5678 9123 4567" name="cardnumber" required>
 				<div class="carddates">
 				  <div class="carddatesmonth">
-					<select name="cardmonth">
+					<select name="cardmonth" required>
+					<option value="">Hónap</option>
 					  <option value="01">01</option>
 					  <option value="02">02</option>
 					  <option value="03">03</option>
@@ -45,7 +45,8 @@ input[type=number] {
 					</select>
 				  </div>
 				  <div class="carddatesyear">
-					<select name="cardyear">
+					<select name="cardyear" required>
+					<option value="">Év</option>
 					  <option value="21">2021</option>
 					  <option value="22">2022</option>
 					  <option value="23">2023</option>
@@ -61,14 +62,14 @@ input[type=number] {
 				</div>
 				<div class="card-verification">
 				  <div class="cardcvv">
-					<input type="number" placeholder="CVV" name="cvc">
+					<input type="number" placeholder="CVV" name="cvc" min="000" max="999" required>
 				  </div>
 				  <div class="cardcvvtext">
 					3 számjegy amely a kártya <br>
 					hátoldalán található
 				  </div>
 				</div>
-				<button type="submit" class="cardsavebtn"><a href="#">Mentés</a></button>
+				<button type="submit" class="cardsavebtn">Mentés</button>
 		</form>
 		</div>
 	</div>

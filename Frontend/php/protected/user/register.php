@@ -25,7 +25,7 @@ input[type=number] {
 				Felhasználónév <br></br>
 				<input type="text" class="registerinput" name="username" required> <br></br>
 				Jelszó <br></br>
-				<input type="password" class="registerinput" name="password" min="8" max="64" required> <br></br>
+				<input type="password" class="registerinput" name="password" minlength="8" maxlength="64" required> <br></br>
 				E-mail <br></br>
 				<input type="email" class="registerinput" name="email" required> <br></br>
 				Teljes név <br></br>

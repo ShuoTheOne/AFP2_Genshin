@@ -5,6 +5,7 @@ html {
 body
 {
 	margin: 0px;
+	min-width: 1200px;
 }
 	
 #container
@@ -89,7 +90,7 @@ nav
 /* navigációs sáv */
 #navbar
 {
-	min-width: 1000px;
+	min-width: 1200px;
 	min-height: 50%;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -135,7 +136,7 @@ nav
 		font-size: 16px;    
 		border: none;
 		outline: none;
-		color: white;
+		color: black;
 		padding: 14px 16px;
 		background-color: inherit;
 		font-family: inherit;
@@ -234,7 +235,8 @@ content > canvas
 
 .slideshowBtnLeft, .slideshowBtnRight
 {
-	width: 5vw;
+	margin-left: 15vw;
+	width: 12vw;
 	height: 3vh;
 }
 
@@ -390,7 +392,7 @@ footer
 	#product-bottom > table > tbody > tr > td
 	{
 		text-align: center;
-		width: 20vw;
+		width: 30vw;
 	}
 
 #offers
