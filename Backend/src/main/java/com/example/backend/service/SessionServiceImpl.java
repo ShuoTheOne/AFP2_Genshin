@@ -22,4 +22,12 @@ class SessionServiceImpl implements SessionService {
                 .map(User::toUserData)
                 .orElseThrow(() -> new RuntimeException("session expired."));
     }
+
+    @Override
+    public User getUser(String token) {
+        return Optional.ofNullable(repository.findByToken(token))
+                .filter(Session::isValid)
+                .map(Session::getUser)
+                .orElseThrow(() -> new RuntimeException("session expired."));
+    }
 }

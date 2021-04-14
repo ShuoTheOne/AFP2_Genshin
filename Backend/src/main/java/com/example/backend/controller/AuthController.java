@@ -1,10 +1,10 @@
 package com.example.backend.controller;
 
 import com.example.backend.controller.dto.*;
-import com.example.backend.dao.ProductRepository;
+import com.example.backend.dao.entity.User;
 import com.example.backend.model.UserData;
 import com.example.backend.service.*;
-import io.swagger.models.auth.In;
+import com.sun.tools.jconsole.JConsoleContext;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.*;
@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.*;
-import java.io.IOException;
+import java.io.*;
 import java.time.LocalDate;
 
 @RestController
@@ -22,6 +22,7 @@ public class AuthController {
 
     private final AuthService authService;
     private final SessionService sessionService;
+    private  final CreditCardService creditCardService;
     @Value("${frontend.url.php}")
     private String frontEndUrl;
 
@@ -100,5 +101,25 @@ public class AuthController {
     @GetMapping("/me")
     public UserData me(@CookieValue(value = "login_token",defaultValue = "invalid") String token) {
         return sessionService.bySession(token);
+    }
+
+    @PostMapping("/addcreditcard")
+    public void addCard(@RequestParam MultiValueMap<String,String> paramMap,HttpServletResponse response,
+                        @CookieValue(value = "login_token",defaultValue = "invalid") String token) throws IOException {
+        log.info("{}", paramMap);
+        String name = paramMap.get("cardownername").get(0);
+        String card_number = paramMap.get("cardnumber").get(0);
+        String expiration_date = paramMap.get("cardmonth").get(0)+paramMap.get("cardyear").get(0);
+        String cvc = paramMap.get("cvc").get(0);
+        CreditCardRequest addCardRequest = new CreditCardRequest(
+                name,
+                card_number,
+                expiration_date,
+                cvc
+        );
+
+        User user = sessionService.getUser(token);
+        creditCardService.addCard(addCardRequest, user);
+        response.sendRedirect(frontEndUrl + "/php/index.php?P=login");
     }
 }
