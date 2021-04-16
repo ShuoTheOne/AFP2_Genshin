@@ -32,4 +32,14 @@ public class ProductServiceImpl implements ProductService{
     public List<ProductRequest> getProduct() {
          return productRepository.findAll().stream().map(Product::toProductRequest).collect(Collectors.toList());
     }
+
+    @Override
+    public List<ProductRequest> getProductsByCategory(String category) {
+        return productRepository.getAllByCategory(category).stream().map(Product::toProductRequest).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<ProductRequest> getByName(String name) {
+        return productRepository.getAllByNameContaining(name).stream().map(Product::toProductRequest).collect(Collectors.toList());
+    }
 }

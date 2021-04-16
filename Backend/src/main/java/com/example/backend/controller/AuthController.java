@@ -106,10 +106,9 @@ public class AuthController {
     @PostMapping("/addcreditcard")
     public void addCard(@RequestParam MultiValueMap<String,String> paramMap,HttpServletResponse response,
                         @CookieValue(value = "login_token",defaultValue = "invalid") String token) throws IOException {
-        log.info("{}", paramMap);
         String name = paramMap.get("cardownername").get(0);
         String card_number = paramMap.get("cardnumber").get(0);
-        String expiration_date = paramMap.get("cardmonth").get(0)+paramMap.get("cardyear").get(0);
+        String expiration_date = paramMap.get("cardmonth").get(0) + "/" + paramMap.get("cardyear").get(0);
         String cvc = paramMap.get("cvc").get(0);
         CreditCardRequest addCardRequest = new CreditCardRequest(
                 name,

@@ -9,4 +9,8 @@ public interface ProductService {
     void addProduct(ProductRequest request);
 
     List<ProductRequest> getProduct();
+
+    List<ProductRequest> getProductsByCategory(String category);
+
+    List<ProductRequest> getByName(String name);
 }
