@@ -19,13 +19,53 @@ input[type=number] {
 }
 </style>
 
+<script>
+  window.onload=function(){
+  var numberinput=document.getElementById('intTextBox');
+  numberinput.addEventListener('change',changedValue);
+}
+
+function changedValue(){
+  var input=this.value
+  var intTextBox=parseInt(input,10);
+      
+    var numbersArray = input.split(".");
+    numbersArray[0] = numbersArray[0].replace(/(?=(\d{4})+(?!\d))/g, " ");
+    this.value= numbersArray.join(".");
+}
+
+function maxLengthCheck(object)
+  {
+    if (object.value.length > object.maxLength)
+      object.value = object.value.slice(0, object.maxLength)
+  }
+
+function intEllenorzo(evt) {
+  var theEvent = evt || window.event;
+
+  // Handle paste
+  if (theEvent.type === 'paste') {
+      key = event.clipboardData.getData('text/plain');
+  } else {
+  // Handle key press
+      var key = theEvent.keyCode || theEvent.which;
+      key = String.fromCharCode(key);
+  }
+  var regex = /[0-9]|\./;
+  if( !regex.test(key) ) {
+    theEvent.returnValue = false;
+    if(theEvent.preventDefault) theEvent.preventDefault();
+  }
+}
+</script>
+
 	<body>
 	<div id="container">
 		<div class="cardsave">
 			Bankkártya hozzáadása <br>
 			<form class="modal-content animate" action="http://localhost:8080/addcreditcard" method="post">
 				<input type="text" class="cardcvvtext" placeholder="Kártyatulajdonos neve"  name="cardownername" required>
-				<input type="number" class="cardnumber" placeholder="1234 5678 9123 4567" name="cardnumber" required>
+				<input type="text" oninput="maxLengthCheck(this)" onkeypress='intEllenorzo(event)' pattern=".{16,}" class="cardnumber" id="intTextBox" placeholder="1234 5678 9123 4567" name="cardnumber" maxlength="16" required>
 				<div class="carddates">
 				  <div class="carddatesmonth">
 					<select name="cardmonth" required>
@@ -62,7 +102,7 @@ input[type=number] {
 				</div>
 				<div class="card-verification">
 				  <div class="cardcvv">
-					<input type="number" placeholder="CVV" name="cvc" min="000" max="999" required>
+					<input type="number" oninput="maxLengthCheck(this)" placeholder="CVV" name="cvc" min="1" max="999" maxlength = "3" required>
 				  </div>
 				  <div class="cardcvvtext">
 					3 számjegy amely a kártya <br>
