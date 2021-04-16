@@ -56,14 +56,12 @@
 	</div>
 
 		<li><a href="index.php">Főoldal</a></li>
-		<li><a href="index.php?P=test">Hozzáférés</a></li>
 		
 	<?php if(IsUserLoggedIn()) : ?>	
 		<li><a href="index.php?P=profil">Profil</a></li>
+		<li><a href="index.php?P=addcreditcard">Bankkártya hozzáadása</a></li>
 	<?php endif; ?>
 
-		<li><a href="index.php?P=addcreditcard">Bankkártya hozzáadása</a></li>
-		<li><a href="index.php?P=product">Termék</a></li>
 		<li><a href="index.php?P=offers">Ajánlatok</a></li>	
 		<li><a href="index.php?P=subscribe">Hírlevél</a></li>	
 

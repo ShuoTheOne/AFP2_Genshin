@@ -57,7 +57,7 @@ function maxLengthCheck(object)
 				title="Adj meg valós email címet! (példa@példa.com)"
 				required> <br></br>
 				Teljes név <br></br>
-				<input type="text" class="registerinput" name="real_name" minlength="5" required> <br></br>
+				<input type="text" class="registerinput" name="real_name" minlength="5" pattern="([A-Za-z])+( [A-Za-z]+)" required> <br></br>
 				Neme <br></br>
                 <select class="registerinput" name="sex" required>
 					<option value="">Neme</option>
