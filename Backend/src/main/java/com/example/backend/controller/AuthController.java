@@ -75,7 +75,7 @@ public class AuthController {
         return ResponseEntity.ok().build();
     }
 
-    @PostMapping("/request-new-password")
+    @PostMapping("/forgetpassword")
     public void requestNewPassword(@RequestParam MultiValueMap<String,String> paramMap,HttpServletResponse response) throws IOException {
         String username = paramMap.get("username").get(0);
         String email = paramMap.get("email").get(0);

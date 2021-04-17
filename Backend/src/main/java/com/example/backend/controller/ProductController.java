@@ -1,6 +1,8 @@
 package com.example.backend.controller;
 
-import com.example.backend.controller.dto.ProductRequest;
+import com.example.backend.controller.dto.*;
+import com.example.backend.dao.BuyRepository;
+import com.example.backend.dao.entity.User;
 import com.example.backend.service.*;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +22,8 @@ import java.util.List;
 public class ProductController {
 
     private final ProductService productService;
+    private final SessionService sessionService;
+    private final BuyService buyService;
     @Value("${frontend.url.php}")
     private String frontEndUrl;
 
@@ -42,6 +46,14 @@ public class ProductController {
     @PostMapping("/search")
     private List<ProductRequest> getByName(@RequestParam MultiValueMap<String,String> paramMap) {
         return productService.getByName(paramMap.get("name").get(0));
+    }
+
+    @PostMapping(path ="addtocart" , consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
+    public void addToCart(BuyRequest buyRequest,HttpServletResponse response,
+                        @CookieValue(value = "login_token",defaultValue = "invalid") String token ) throws IOException {
+        User user = sessionService.getUser(token);
+        buyService.addToCart(buyRequest, user);
+        response.sendRedirect(frontEndUrl + "/php/index.php?P=login");
     }
 
 }
