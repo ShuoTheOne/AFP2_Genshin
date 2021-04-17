@@ -514,6 +514,21 @@ footer
 		width: 20vw;
 	}
 
+.shoppingcart-trash
+{
+		margin-top: 10px;
+		width: 120px;
+		height: 120px;
+}
+
+.shoppingcart-img > img
+{
+		margin-top: 10px;
+		width: 220px;
+		height: 180px;
+}
+
+
 /* Bankkártya mentési rész */
 .cardsave
 {

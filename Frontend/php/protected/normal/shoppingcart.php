@@ -17,17 +17,17 @@
 						<th> Törlés </th>
 					</tr>
 					<tr>
-						<td><img src="public/images/bosschair.jpg"></img></td>
+						<td><a href="#" class="shoppingcart-img"><img src="public/images/bosschair.jpg"></a></img></td>
 						<td><input type="number"></td>
 						<td>49999FT</td>
 						<td>49999FT</td>
-						<td><button> <img src="public/images/trash.png"></img> </button></td>
+						<td><button><img class="shoppingcart-trash" src="public/images/trash.png"></img> </button></td>
 					<tr>
-						<td><img src="public/images/asusvivobook.jpg"></img></td>
+						<td><a href="#" class="shoppingcart-img"><img src="public/images/asusvivobook.jpg"></a></img></td>
 						<td><input type="number"></td>
 						<td>199999FT</td>
 						<td>199999FT</td>
-						<td><button><img src="public/images/trash.png"></img> </button></td>
+						<td><button><img class="shoppingcart-trash" src="public/images/trash.png"></img> </button></td>
 					</tr>
 					<tr>
 						<td colspan="4"></td>
