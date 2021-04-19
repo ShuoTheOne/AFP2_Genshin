@@ -38,6 +38,12 @@ switch ($_GET['P']) {
 	
 	case 'addproduct': !IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/addproduct.php' : header('Location: index.php'); break;
 
+	case 'adatmegadas': require_once PROTECTED_DIR.'normal/adatmegadas.php'; break;
+
+	case 'fizetes': require_once PROTECTED_DIR.'normal/fizetes.php'; break;
+
+	case 'confirmation': require_once PROTECTED_DIR.'normal/confirmation.php'; break;
+
 	default: require_once PROTECTED_DIR.'normal/404.php'; break;
 }
 

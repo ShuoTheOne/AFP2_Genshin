@@ -43,7 +43,14 @@
 					</tr>
 					<tr>
 						<td colspan="4"></td>
-						<td><button> Rendelés </button></td>
+						<?php if(IsUserLoggedIn()) : ?>	
+							<br>
+							<td><a href="index.php?P=fizetes" class="button">Folytatás</a> <br></br></td>
+						<?php endif; ?>
+						<?php if(!IsUserLoggedIn()) : ?>	
+							<br>
+							<td><a href="index.php?P=adatmegadas" class="button">Folytatás</button> <br></br></td>
+						<?php endif; ?>
 					</tr>
 				</tbody>
 			</table>
