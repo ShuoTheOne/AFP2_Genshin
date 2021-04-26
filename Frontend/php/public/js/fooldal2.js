@@ -7,10 +7,9 @@ import {GLTFLoader} from '../node_modules/three/examples/jsm/loaders/GLTFLoader.
  * Debug
  */
 const gui = new GUI()
-gui.hide()
 
 //Canvas
-const canvas = document.querySelector('.webgl');
+const canvas = document.querySelector('.webgl2');
 
 // Sizes
 const sizes = {
@@ -63,7 +62,7 @@ scene.add(directionalLightCameraHelper)
 let model = null
 const gltfLoader = new GLTFLoader()
 gltfLoader.load(
-    './public/models/Duck/glTF/Duck.gltf',
+    './public/models/FlightHelmet/glTF/FlightHelmet.gltf',
     (gltf) => {
         console.log(gltf)
         /*for(const child of gltf.scene.children){
@@ -74,7 +73,7 @@ gltfLoader.load(
         }*/
 
         const child = gltf.scene
-        child.scale.set(1.2, 1.2, 1.2)
+        child.scale.set(4, 4, 4)
         child.position.set(0.7, -1.3, 2.1)
         child.rotation.y = 3.5
         child.castShadow = true
