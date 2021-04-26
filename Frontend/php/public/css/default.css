@@ -206,17 +206,10 @@ nav
 	width: 100%;
 }
 
-
-#block2 > canvas
+.webgl
 {
-	width: 700;
-	height: 500;
-}
-
-content > canvas
-{
-	width: 1000;
-	height: 700;
+	width: 90%;
+	height: 500px;
 }
 
 
