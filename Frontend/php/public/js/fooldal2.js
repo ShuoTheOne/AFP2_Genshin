@@ -7,6 +7,7 @@ import {GLTFLoader} from '../node_modules/three/examples/jsm/loaders/GLTFLoader.
  * Debug
  */
 const gui = new GUI()
+gui.hide()
 
 //Canvas
 const canvas = document.querySelector('.webgl2');
@@ -93,10 +94,10 @@ gltfLoader.load(
     },
     () => {
         console.log('progress')
-    },
+    }/*,
     () => {
         console.log('error')
-    }
+    }*/
 )
 
 /**
@@ -107,7 +108,7 @@ fontLoader.load(
     './public/fonts/helvetiker_regular.typeface.json',
     (font) => {
         const textGeometry = new THREE.TextGeometry(
-            'FullExtras Furdokacsa',
+            'Ultimate Flight Helmet',
             {
                 font: font,
                 size: 0.75,
