@@ -7,6 +7,7 @@ import {GLTFLoader} from '../node_modules/three/examples/jsm/loaders/GLTFLoader.
  * Debug
  */
 const gui = new GUI()
+gui.hide()
 
 //Canvas
 const canvas = document.querySelector('.webgl3');
@@ -74,7 +75,7 @@ gltfLoader.load(
 
         const child = gltf.scene
         child.scale.set(4, 4, 4)
-        child.position.set(0.7, -1.3, 2.1)
+        child.position.set(3, -1.3, 2.1)
         child.rotation.y = 3.5
         child.castShadow = true
         scene.add(child)
@@ -107,7 +108,7 @@ fontLoader.load(
     './public/fonts/helvetiker_regular.typeface.json',
     (font) => {
         const textGeometry = new THREE.TextGeometry(
-            'Ultimate Flight Helmet',
+            'Kenyelmes fotel',
             {
                 font: font,
                 size: 0.75,
@@ -150,7 +151,7 @@ gui.add(mesh.position, 'z').name('Mesh position z').min(0).max(3).step(0.1)*/
  **/
 const camera = new THREE.PerspectiveCamera(75, sizes.width/sizes.height);
 camera.position.z = 2.7;
-camera.position.x = -3.4
+camera.position.x = -2.4
 camera.rotation.y = - 0.54
 camera.add( new THREE.PointLight( 0xffffff, 0.8 ) );
 scene.add(camera);
