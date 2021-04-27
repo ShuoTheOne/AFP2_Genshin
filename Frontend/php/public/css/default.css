@@ -148,7 +148,7 @@ nav
 	}
 
 	.dropdown-one {
-		cursor: pointer;
+
 		display: none;
 		position: absolute;
 		background-color: #f9f9f9;
@@ -157,7 +157,6 @@ nav
 	}
 
 	.dropdown-two {
-		cursor: pointer;
 		display: none;
 		position: absolute;
 		left: 160px;
@@ -177,7 +176,14 @@ nav
 		display: block;
 		text-align: left;
 	}
-
+	
+	.dItem > button
+	{
+		cursor: pointer;
+		background-color: white;
+		border: 0;
+		min-width: 100px;
+	}
 	.dropdown-one .dItem:hover, .dropdown-two a:hover {
 		background-color: #ddd;
 	}

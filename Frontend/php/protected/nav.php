@@ -1,23 +1,24 @@
 <div id="navbar">
 	<ul>
-
+	
+	<form action="./index.php?P=keresesresult" method="post" id="myform">
 	<div class="dropdown">
         <div class="dropbtn">Termékek</div>
         	<div class="dropdown-one">
 				<div id="link1" class="dItem" href="#">Telefon, Tablet, Laptop
 					<div class="dropdown-two">
-					<div class="dItem" id="file" href="#">Telefon</div>
-					<div class="dItem" id="file" href="#">Telefon tartozékok</div>
-					<div class="dItem" id="file" href="#">Laptop</div>
-					<div class="dItem" id="file" href="#">Laptop tartozékok</div>
-					<div class="dItem" id="file" href="#">Tablet</div>
-					<div class="dItem" id="file" href="#">Tablet tartozékok</div>
+					<div class="dItem" id="file"><button name="keresesresult" value="telefon">Telefon</button></div>
+					<div class="dItem" id="file"><button name="keresesresult" value="telefon tartozékok">Telefon tartozékok</div>
+					<div class="dItem" id="file"><button name="keresesresult" value="laptop">Laptop</div>
+					<div class="dItem" id="file"><button name="keresesresult" value="laptop tartozékok">Laptop tartozékok</div>
+					<div class="dItem" id="file"><button name="keresesresult" value="tablet">Tablet</div>
+					<div class="dItem" id="file"><button name="keresesresult" value="tablet tartozékok">Tablet tartozékok</div>
 					</div>
 				</div>
 
 				<div id="link1" class="dItem" href="#">Számítástechnika
 					<div class="dropdown-two">
-					<div class="dItem" id="file" href="#">Monitorok</div>
+					<div class="dItem" id="file">Monitorok</div>
 					<div class="dItem" id="file" href="#">Gaming</div>
 					<div class="dItem" id="file" href="#">PC alkatrészek</div>
 					<div class="dItem" id="file" href="#">Routerek</div>
@@ -54,6 +55,7 @@
 			</div>
 		</div>
 	</div>
+	</form>
 
 		<li><a href="index.php">Főoldal</a></li>
 		
