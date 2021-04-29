@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 public class ProductServiceImpl implements ProductService{
 
     private final ProductRepository productRepository;
+    private final RatingRepository ratingRepository;
 
 
     @Override
@@ -41,5 +42,11 @@ public class ProductServiceImpl implements ProductService{
     @Override
     public List<ProductRequest> getByName(String name) {
         return productRepository.getAllByNameContaining(name).stream().map(Product::toProductRequest).collect(Collectors.toList());
+    }
+
+    @Override
+    public void addRating(RatingRequest request,User user) {
+        Rating rating= Rating.addComment(request, user);
+        ratingRepository.save(rating);
     }
 }

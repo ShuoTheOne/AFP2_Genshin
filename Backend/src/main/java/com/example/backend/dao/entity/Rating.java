@@ -1,8 +1,10 @@
 package com.example.backend.dao.entity;
 
+import com.example.backend.controller.dto.*;
 import lombok.*;
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Date;
 // import controller.dto.RatingDto;
 
 @Entity
@@ -29,5 +31,15 @@ public class Rating {
 
     private LocalDate date;
 
+    public static Rating addComment(RatingRequest request, User user) {
+        return new Rating(
+                0,
+                request.getStar(),
+                request.getComment(),
+                request.getProduct(),
+                user,
+                LocalDate.now()
+        );
+    }
     //public RatingDto(){return new RatingDto(id,star,comment,product_id,user_id,date);}
 }

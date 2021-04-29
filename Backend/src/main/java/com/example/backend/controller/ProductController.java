@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
+import java.util.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -44,8 +44,8 @@ public class ProductController {
     }
 
     @PostMapping("/search")
-    private List<ProductRequest> getByName(@RequestParam MultiValueMap<String,String> paramMap) {
-        return productService.getByName(paramMap.get("name").get(0));
+    private List<ProductRequest> getByName(@RequestBody Map<String,String> paramMap) {
+        return productService.getByName(paramMap.get("name"));
     }
 
     @PostMapping(path ="addtocart" , consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
@@ -55,5 +55,12 @@ public class ProductController {
         buyService.addToCart(buyRequest, user);
         response.sendRedirect(frontEndUrl + "/php/index.php?P=login");
     }
+
+    @PostMapping(path = "/addrating", consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
+    public void rating(RatingRequest ratingRequest,User user, HttpServletResponse response) throws IOException {
+        productService.addRating(ratingRequest, user);
+        response.sendRedirect(frontEndUrl + "/php/");
+    }
+
 
 }
