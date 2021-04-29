@@ -1,12 +1,12 @@
 <?php
-if (isset($_GET["p"]))
+if (isset($_POST["p"]))
 {
-    $id = $_GET["p"];
+    $id = $_POST["p"];
 }
 ?>
 
 <?php 
-if(isset($_GET["p"]) && !empty($_GET['p'])) {
+if(isset($_POST["p"]) && !empty($_POST['p'])) {
 	
 	$query = "SELECT * FROM product WHERE id = '$id'";
 	require_once DATABASE_CONTROLLER;
@@ -15,9 +15,9 @@ if(isset($_GET["p"]) && !empty($_GET['p'])) {
 ?>
 
 <?php 
-if(isset($_GET["p"]) && !empty($_GET['p'])) {
+if(isset($_POST["p"]) && !empty($_POST['p'])) {
 	
-	$query = "SELECT * FROM rating WHERE id = '$id'";
+	$query = "SELECT * FROM rating WHERE product_id = '$id'";
 	require_once DATABASE_CONTROLLER;
 	$ratings = getList($query);
 }
@@ -68,17 +68,33 @@ if(isset($_GET["p"]) && !empty($_GET['p'])) {
 
 				
 				
-				<button id="opinionsendbutton" onclick=""> Küldés </button> 
+				<button id="opinionsendbutton" onclick=""> Küldés </button> <br>
 
-
-
-				 <?php foreach($ratings as $r) : ?>
-				<input type="hidden" name="new" value="1" />
-				<input name="id" type="hidden" value="<?php echo $id;?>" />
-				<?php endforeach; ?>
-
-				<p> Felhasználó <?php echo $r['user_id']?> : <?php echo $r['comment']?> </p>
-				
+				<?php
+				$db = 0;
+				$output = '';
+				foreach ($ratings as $r) {
+					$db++;				
+				}
+				if($db == 0)
+				{
+					print("Telehetsz az első hozzászóló");
+				}
+				else
+				{
+					foreach($ratings as $r)
+					{
+						$user_id = $r['user_id'];
+						$comment = $r['comment'];
+						$star = $r['star'];
+						$output .= '<input type="hidden" name="new" value="1" />
+									<input name="id" type="hidden" value="' .$id. '" />
+									"Felhasználó '.$user_id.' : '.$comment.' : '.$star.'
+						';
+					}
+				}
+				print("$output");
+				?>
 			</div>
 		</div>
 	</div>

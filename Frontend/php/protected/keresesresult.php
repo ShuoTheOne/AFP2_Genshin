@@ -33,7 +33,8 @@
 							$value = $sl['value'];
 							
 							$output .= 
-							'<table>
+							'<form action="./index.php?P=product" method="post">
+							<table>
 								<thead>
 								</thead>
 								<tbody>
@@ -42,25 +43,15 @@
 										<td> <img src='  .$img_url. '></td>
 										<td>' .$name. '</td>
 										<td>' .$value. '</td>
-
+										<td> <button name="p" value="'.$id.'">Termékhez</button></td>
 									</tr>
 								</tbody>
-							</table>';
+							</table>
+							</form>';
 						}
 					}
 				}
 			print("$output");
 		?>
-
-				<?php if($db != 0) : ?>	
-					<?php foreach ($products as $p) : ?>
-						<?php $i++; ?>
-						<tr>
-							<th scope="row"><?=$i ?></th>
-							<td><a href="?P=product&p=<?=$p['id'] ?>">Termékhez</a></td>
-							<br>
-						</tr>
-					<?php endforeach;?>
-				<?php endif; ?>
 		</div>
 </div>
