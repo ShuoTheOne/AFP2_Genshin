@@ -1,26 +1,47 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-	<meta charset="utf-8">
-	<title> Termék </title>
- </head>
- <body>
+<?php
+if (isset($_GET["p"]))
+{
+    $id = $_GET["p"];
+}
+?>
+
+<?php 
+if(isset($_GET["p"]) && !empty($_GET['p'])) {
+	
+	$query = "SELECT * FROM product WHERE id = '$id'";
+	require_once DATABASE_CONTROLLER;
+	$products = getList($query);
+}
+?>
+
+<?php 
+if(isset($_GET["p"]) && !empty($_GET['p'])) {
+	
+	$query = "SELECT * FROM rating WHERE id = '$id'";
+	require_once DATABASE_CONTROLLER;
+	$ratings = getList($query);
+}
+?>
+
 	<div id="container">
 		<div id="product">
 			<div id="product-top">
+
+				 <?php foreach($products as $p) : ?>
+				<input type="hidden" name="new" value="1" />
+				<input name="id" type="hidden" value="<?php echo $id;?>" />
+				<?php endforeach; ?>
+
 				<div class="product-top producttopleft">
-					<img src="public/images/shopcart.png" class="product-top-left-img">
+					<img src="<?php echo $p['img_url']?>" class="product-top-left-img">
 				</div>
 				<div class="product-top producttopright">
-					<p> Értékelés: </p>
-					<p> Forgalmazó: </p>
-					<p> Kiszállítási idő: </p>
-					<p> Ár: 421341 FT </p>
-					<button> Vásárlás </button>
+					<p> Név: <?php echo $p['name']?> </p>
+					<p> Kategória: <?php echo $p['category']?> </p>
+					<p> Leírás: <?php echo $p['description']?></p>
+					<p> Ár: <?php echo $p['value']?> </p>
+					<td> <button> <a href="index.php?P=shoppingcart" class="button">Kosárhoz adás</a> </button></td>
 				</div>
-			</div>
-			<div id="product-middle">
-			
 			</div>
 			<div id="product-bottom">
 				<table>
@@ -48,7 +69,16 @@
 				
 				
 				<button id="opinionsendbutton" onclick=""> Küldés </button> 
+
+
+
+				 <?php foreach($ratings as $r) : ?>
+				<input type="hidden" name="new" value="1" />
+				<input name="id" type="hidden" value="<?php echo $id;?>" />
+				<?php endforeach; ?>
+
+				<p> Felhasználó <?php echo $r['user_id']?> : <?php echo $r['comment']?> </p>
+				
 			</div>
 		</div>
 	</div>
-</html>

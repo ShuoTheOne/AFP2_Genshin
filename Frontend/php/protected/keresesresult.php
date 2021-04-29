@@ -1,5 +1,6 @@
 <div id="container">
 	<div id="searchtable">
+
 		<?php 
 			$output = '';
 			if (isset($_POST['keresesresult']) && $_POST['keresesresult'] !== ' ') 
@@ -12,12 +13,17 @@
 
 				$db = 0; 
 					foreach ($searchlist as $sl) {
-						$db++;
+						$db++;				
 					}
 
+				$products = getList($query);
+				$i = 0;
+	
+
 				if ($db == 0) {
-					print("nincs találat '$search' ");
+					print("Nincs találat '$search' ");
 				}
+
 				else{
 					foreach ($searchlist as $sl) 
 						{
@@ -32,9 +38,11 @@
 								</thead>
 								<tbody>
 									<tr>
+										<th scope="row"><?=$i ?></th>
 										<td> <img src='  .$img_url. '></td>
 										<td>' .$name. '</td>
-										<td>' .$value. '</td>	
+										<td>' .$value. '</td>
+
 									</tr>
 								</tbody>
 							</table>';
@@ -43,5 +51,16 @@
 				}
 			print("$output");
 		?>
-	</div>
+
+				<?php if($db != 0) : ?>	
+					<?php foreach ($products as $p) : ?>
+						<?php $i++; ?>
+						<tr>
+							<th scope="row"><?=$i ?></th>
+							<td><a href="?P=product&p=<?=$p['id'] ?>">Termékhez</a></td>
+							<br>
+						</tr>
+					<?php endforeach;?>
+				<?php endif; ?>
+		</div>
 </div>

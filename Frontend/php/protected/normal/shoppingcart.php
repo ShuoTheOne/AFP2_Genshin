@@ -6,6 +6,15 @@
 	<title> Kosár </title>
  </head>
  <body>
+
+
+<?php 
+	$query = "SELECT * FROM buy";
+	require_once DATABASE_CONTROLLER;
+	$buys = getList($query);
+	// EGYELŐRE CSAK ITT VAN, NINCS HASZNÁLVA MÉG
+?> 		
+
 		<div id="shoppingcart">
 			<table>
 				<tbody>
