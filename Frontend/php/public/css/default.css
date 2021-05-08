@@ -514,8 +514,14 @@ footer
     -moz-column-count:2;
     -webkit-column-count:2;
     font-family: cursive;
+    vertical-align: top;
+    display: inline-block;
 }
 
+table.searchtext td {
+	display: block;
+}
+}
 
 /* Bevásárló kosár */
 #shoppingcart

@@ -34,13 +34,13 @@
 							
 							$output .= 
 							'<form action="./index.php?P=product" method="post">
-							<table>
+							<table class = "searchtext">
 								<thead>
 								</thead>
 								<tbody>
 									<tr>
 										<th scope="row"><?=$i ?></th>
-										<td> <img src='  .$img_url. '></td>
+										<td> <img src='  .$img_url. ' width = "270" height ="270"></td>
 										<td>' .$name. '</td>
 										<td>' .$value. '</td>
 										<td> <button name="p" value="'.$id.'">Termékhez</button></td>
