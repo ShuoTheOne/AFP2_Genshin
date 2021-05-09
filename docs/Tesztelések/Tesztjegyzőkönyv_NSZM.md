@@ -29,5 +29,7 @@
 | Út/utca | Lehel út | Üresen hagyás esetén jelez a rendszer.Csak szöveges input, szám nem írható | Üresen hagyás esetén jelez a rendszer.Csak szöveges input, szám nem írható | Megfelelt |
 | Házszám | 9 | Üresen hagyás esetén jelez a rendszer. Csak szám input, szöveg nem írható | Üresen hagyás esetén jelez a rendszer. Csak szám input, szöveg nem írható | Megfelelt |
 | Ország | Magyarország | Üresen hagyás esetén jelez a rendszer.Csak szöveges input, szám nem írható | Üresen hagyás esetén jelez a rendszer.Csak szöveges input, szám nem írható | Megfelelt |
-| Elvárt eredmény | Aktuális eredmény | Megfelelősség státusza |
-| A küldés gombra kattintva, az adatokat elküldi az adatbázisba, az oldalon átirányít a loginra. A rendszer küld egy emailt a regisztráció megerősítéséhez. A linkre kattintva a regisztráció sikeresen megtörténik, az adatbázisban frissül az adat. | Megfelelően működik mindaddig, míg a felhasználónév vagy az email cím még nem foglalt. Ilyenkor errort dob ki, azonban ez nem értelmezhető a felhasználó számára. | HIBÁS |
+
+| | Elvárt eredmény | Aktuális eredmény | Megfelelősség státusza |
+| --- | --- | --- | --- | --- |
+| | A küldés gombra kattintva, az adatokat elküldi az adatbázisba, az oldalon átirányít a loginra. A rendszer küld egy emailt a regisztráció megerősítéséhez. A linkre kattintva a regisztráció sikeresen megtörténik, az adatbázisban frissül az adat. | Megfelelően működik mindaddig, míg a felhasználónév vagy az email cím még nem foglalt. Ilyenkor errort dob ki, azonban ez nem értelmezhető a felhasználó számára. | HIBÁS |
