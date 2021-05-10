@@ -1,3 +1,4 @@
+
 | Készítette | Vasas Csaba |
 | --- | --- |
 | Beosztás | Frontend fejlesztő – Junior |
@@ -63,12 +64,12 @@
 | Jelszó | pewdiepie | A jelszónak tartalmaznia kell 8 karaktert, köztük kisbetű-nagybetűt és számot! | A jelszónak tartalmaznia kell 8 karaktert, köztük kisbetű-nagybetűt és számot! | Megfelelt |
 | Email | [lincoln@gmail.com](mailto:lincoln@gmail.com) | Valós email cím ellenőrzése (@ megléte, karakterek hosszúsága, ABC betűi, @ után 2 karakter legalább) | Valós email cím ellenőrzése (@ megléte, karakterek hosszúsága, ABC betűi, @ után 2 karakter legalább) | Megfelelt |
 | Teljes név | Abraham Lincoln | Minimum 5 karakter, ketté tagolva | Minimum 5 karakter, ketté tagolva | Megfelelt |
-| Neme | makiverem | A termék oldalra lépve kilistázza az eddigi véleményeket az adott termékhez | A termék oldalra lépve kilistázza az eddigi véleményeket az adott termékhez | Megfelelt |
-| Születési dátum | makiverem | A „Küldés&quot; gombra kattintva, az adott termékhez véleményt küld át a rendszernek. | Semmit nem csinál a gomb. | Megfelelt |
+| Neme | Férfi | A termék oldalra lépve kilistázza az eddigi véleményeket az adott termékhez | A termék oldalra lépve kilistázza az eddigi véleményeket az adott termékhez | Megfelelt |
+| Születési dátum | 1999/10/05 | Nem lehet jövőbeli dátumot megadni | Nem lehet jövőbeli dátumot megadni | Megfelelt |
 | Irányítószám | 4455 | Irányítószám csak 4 karakter hosszú lehet 1000 és 9999 között, és csak szám | Irányítószám csak 4 karakter hosszú lehet 1000 és 9999 között, és csak szám | Megfelelt |
 | Város | Winstolm | Város legalább 2 karakter hosszú legyen | Város legalább 2 karakter hosszú legyen | Megfelelt |
 | Út/utca | Strasse Street | Utca legalább 2 karakter hosszú legyen | Utca legalább 2 karakter hosszú legyen | Megfelelt |
-| Házszám | 88 | 4 karakter hosszú, 1 és 9999 közötti érték, csak szám | 4 karakter hosszú, 1 és 9999 közötti érték, csak szám | Megfelelt |
+| Házszám | 88 | Maximum 4 karakter hosszú, 1 és 9999 közötti érték, csak szám | 4 karakter hosszú, 1 és 9999 közötti érték, csak szám | Megfelelt |
 | Ország | Anglia | Legalább 2 karakter hosszú | Legalább 2 karakter hosszú | Megfelelt |
 | Regisztrálás | - | Adatokat átküldi backenden keresztül az adatbázisba és eltárolja őket, majd átirányít a főoldalra | Adatokat átküldi backenden keresztül az adatbázisba és eltárolja őket, majd átirányít a főoldalra | Megfelelt |
 | Rendelkezem felhasználóval gomb | - | Átirányít a login oldalra | Átirányít a login oldalra | Megfelelt |
