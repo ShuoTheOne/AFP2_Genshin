@@ -29,7 +29,23 @@
 | Út/utca | Lehel út | Üresen hagyás esetén jelez a rendszer.Csak szöveges input, szám nem írható | Üresen hagyás esetén jelez a rendszer.Csak szöveges input, szám nem írható | Megfelelt |
 | Házszám | 9 | Üresen hagyás esetén jelez a rendszer. Csak szám input, szöveg nem írható | Üresen hagyás esetén jelez a rendszer. Csak szám input, szöveg nem írható | Megfelelt |
 | Ország | Magyarország | Üresen hagyás esetén jelez a rendszer.Csak szöveges input, szám nem írható | Üresen hagyás esetén jelez a rendszer.Csak szöveges input, szám nem írható | Megfelelt |
+| Regisztrálás gomb | - | A küldés gombra kattintva, az adatokat elküldi az adatbázisba, az oldalon átirányít a loginra. A rendszer küld egy emailt a regisztráció megerősítéséhez. A linkre kattintva a regisztráció sikeresen megtörténik, az adatbázisban frissül az adat. | Megfelelően működik mindaddig, míg a felhasználónév vagy az email cím még nem foglalt. Ilyenkor errort dob ki, azonban ez nem értelmezhető a felhasználó számára. | HIBÁS |
 
-| | Elvárt eredmény | Aktuális eredmény | Megfelelősség státusza |
-| --- | --- | --- | --- | --- |
-| | A küldés gombra kattintva, az adatokat elküldi az adatbázisba, az oldalon átirányít a loginra. A rendszer küld egy emailt a regisztráció megerősítéséhez. A linkre kattintva a regisztráció sikeresen megtörténik, az adatbázisban frissül az adat. | Megfelelően működik mindaddig, míg a felhasználónév vagy az email cím még nem foglalt. Ilyenkor errort dob ki, azonban ez nem értelmezhető a felhasználó számára. | HIBÁS |
+** Bankkártya hozzáadás **
+| # | Tesztelt input | Tesztadatok | Elvárt eredmény | Aktuális eredmény | Megfelelősség státusza |
+| --- | --- | --- | --- | --- | --- |
+| 1. | Kártyatulajdonos neve | Hajdu Anna | Üresen hagyása esetén a rendszer jelez | Üresen hagyása esetén a rendszer jelez | Megfelelt |
+| 2. | Kártyaszám | 1234 5678 9123 0000 | Üresen hagyása esetén a rendszer jelez. 16 számjegyet kell tartalmazni a beírt számsornak. Betűket nem lehet megadni. | Üresen hagyása esetén a rendszer jelez. 16 számjegyet kell tartalmazni a beírt számsornak. Betűket nem lehet megadni. | Megfelelt |
+| 3. | Hónap | 12 | A menü lenyitható és kiválasztható a hónap. Nem választás esetén jelez a rendszer. | A menü lenyitható és kiválasztható a dátum. Nem választás esetén jelez a rendszer. | Megfelelt |
+| 4. | Év | 2025 | A menü lenyitható és kiválasztható az év. Nem választás esetén jelez a rendszer. | Megfelelt |
+| 5. | CVV | 258 | A cvv kód 3 számjegyből kell álnia.| A cvv kód 3 számjegyből áll és jelez a rendszer, ha kevesebb | Megfelelt |
+| 6. | Mentés gomb | - | A küldés gombra az adatok mentésre kerülnek az adatbázisban | A küldés gombra az adatok mentésre kerülnek az adatbázisban | Megfellet |
+
+**Keresés - (Nem központi adatbázis alapján)**
+
+| # | Tesztelt input | Tesztadatok | Elvárt eredmény | Aktuális eredmény | Megfelelősség státusza |
+| --- | --- | --- | --- | --- | --- |
+| 1. | Keresés input box | - | A keresés gombra kattintva, kilistázásra kerülnek a termékek az adataikkal. A kép róluk megjelenik, megfelelő méretekben. Ha nincs kép a termékről akkor megfelelő méretben egy "nincs kép" jelenik meg. | Az adatok megfelelően jelennek meg, megfelelő képekkel. Azonban ha nincs kép megadva a termékhez, akkor elcsúszik a kinézete, és nem jelenik meg egy "nincs kép" a kép helyére. | HIBÁS |
+| 2. | Keresés input box | sajt, tok | A "sajt"/"tok" szó beütése a keresés mezőbe, majd a keresés gombra kattintva, a sajt/"tok" nevű termékek kerülnek megjelenítésre.  |  A "sajt"/"tok" szó beütése a keresés mezőbe, majd a keresés gombra kattintva, a sajt/"tok" nevű termékek kerülnek megjelenítésre.  | Megfelelt |
+| 3. | Keresés input box | Sándor, kocsi | Ha bármilyen szó megadásra kerül, amely az adatbázisban nem létezik, nincs rá keresési találat, akkor egy "nincs találat" kerül kiírása az adott keresési szóval. | Ha bármilyen szó megadásra kerül, amely az adatbázisban nem létezik, nincs rá keresési találat, akkor egy "nincs találat" kerül kiírása az adott keresési szóval. | Megfelelt |
+| 4. | Keresés input box | - | Navigációs sávon lévő termékeknél, a kiválasztott termékre kattintva az adott szóval indul egy keresés és az eredmény megjelenítésre kerül. Például.: "telefon"-ra kattintva a telefonok jelennek meg.  | Navigációs sávon lévő termékeknél, a kiválasztott termékre kattintva az adott szóval indul egy keresés és az eredmény megjelenítésre kerül. Például.: "telefon"-ra kattintva a telefonok jelennek meg. | Megfelelt |
