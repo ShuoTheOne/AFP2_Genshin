@@ -26,7 +26,7 @@ public class CreditCard {
 
     private String cvc;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     private User user;
 
     public static CreditCard addCard(CreditCardRequest request, User user) {
